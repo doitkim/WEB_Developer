@@ -4,3 +4,15 @@
 여자가 부르는 부분은 핑크색(hotpink)
 남녀가 같이 부르는 부분은 연두색(lime)으로 바꿔주세요.
   */
+
+  .man {
+    color: blue;
+  }
+
+  .wooman {
+    color: hotpink;
+  }
+
+  .together {
+    color: lime;
+  }
