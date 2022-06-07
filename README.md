@@ -1,2 +1,1 @@
-# WEB_Developer
- Study
+# 웹 퍼블리싱
