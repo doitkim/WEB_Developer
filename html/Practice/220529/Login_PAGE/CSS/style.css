@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 5px;
+    border: solid;
+    border-color: transparent;
+    
+  }
+  
+  body {
+    margin: 0;
+    background-color: #1BBC9B;
+}
+  
+  .login-form {
+ 
+    width: 300px;
+    background-color: #EEEFF1;
+    padding: 20px;
+    display: block;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+        
+  }
+  
+  .text-field {
+    font-size: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+/*  로그인 페이지 과제의 버튼에 작은 효과를 하나 주려고 합니다. 
+    마우스를 '로그인' 버튼 위에 올릴 경우 로그인 버튼에 box-shadow 속성을 설정해주세요.
+    속성값은 위 사진에 나와 있듯이 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);입니다.
+    코드는 css/style.css에 작성해주세요. */
+
+  .submit-btn:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+  } 
+
+  .submit-btn {
+    font-size: 14px;
+    background-color: #1BBC9B;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+
+    }
+  
+  .links {
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+      color:#9B9B9B;
+  }
+  
+  .links a {
+    font-size: 12px;
+    /* color:#9B9B9B; */
+    text-decoration: none;
+    color: inherit;
+    
+    
+  }

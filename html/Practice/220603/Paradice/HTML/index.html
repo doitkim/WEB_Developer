@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 놀이 공원 '파라다이스 파크'의 웹사이트를 만들어보려고 합니다.
+
+여러분이 할 일은 사이트 좌측에 있는 네비게이션 바를 채워 넣는 것입니다.
+
+'HOME', 'EVENT', 'TICKET', 'MEMBERSHIP', 'NOTICE'는 사이트 메뉴입니다. 각각 다른 <li> 태그 안에 있는 <a> 태그입니다. <li> 태그는 모두 <ul> 태그에 묶여 있습니다.
+빨간 선은 margin, 초록 선은 padding, 파란 선은 '가운데 정렬'입니다.
+로고 width 는 136px입니다.
+페이스북 아이콘은 width를 22px로, 트위터 아이콘은 width를 25px로 지정해 주세요. -->
+<html>
+<head>
+  <title>Paradise Park</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<body>
+  <div id="side-navbar">
+      <img src="../IMAGE/logo.png" width="136px" id="logo">
+      <ul id="menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">EVENT</a></li>
+          <li><a href="#">TICKET</a></li>
+          <li><a href="#">MEMBERSHIP</a></li>
+          <li><a href="#">NOTICE</a></li>
+      </ul>
+      <div class="link-container">
+          <a href="https://www.facebook.com"><img src="../IMAGE/fb.png" width="22px"></a>
+          <a href="https://www.twitter.com"><img src="../IMAGE/twitter.png" width="25px"></a>
+      </div>
+  </div>
+
+  <div id="main">
+    <div class="hero-header">
+      <div class="info">
+        <h1>Welcome to Paradise Park!</h1>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

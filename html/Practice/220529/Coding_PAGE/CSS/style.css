@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "jua";
+    src: url(../fonts/BMJUA_ttf.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "jua";
+    text-align: center;
+    color: #58595b
+  }
+
+#main_title{
+    margin-top: 75px;
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+#sub_title{
+    font-size: 32px;
+    margin-bottom: 75px;
+}
+
+body {
+    background-color: #f0e8d9;
+}
+
+.Menu {
+    border: 1px solid transparent;
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    
+    
+}
+.Menu img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 300px;
+    height: 200px;
+}
+
+.Menu_text {
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Menu_dscrib {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-size: 16x;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #000ee0;
+    font-size: 16px;
+}
