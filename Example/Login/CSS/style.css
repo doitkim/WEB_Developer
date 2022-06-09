@@ -49,6 +49,10 @@
   .submit-btn {
     font-size: 14px;
   }
+
+  .submit-btn:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,50);
+  }
   
   .links {
   }

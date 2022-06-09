@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "jua";
+  src: url(../fonts/BMJUA_ttf.ttf);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: jua;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #58595b;
+    background-color: #f0ebd9;
+  }
+
+  #title_name {
+    margin-top: 75px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 64px;
+  }
+
+  #subTitle_name {
+    font-size: 32px;
+    margin-bottom: 75px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .menu {
+    border: 0px solid;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .menu img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .menu_info {
+    padding: 20px;
+  }
+
+  .menu_info #name {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .menu_info #desc {
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
+  }
+
+  .menu_info #pay {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .menu_info #pay a {
+    text-decoration: none;
+    color: #00e;
+  }
