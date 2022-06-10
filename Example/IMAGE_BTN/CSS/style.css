@@ -8,3 +8,12 @@ h1 {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.link-image {
+  text-align: center;
+}
+
+.link-image img{
+  width: 70px;
+  margin: 10px;
+}
