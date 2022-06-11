@@ -9,27 +9,49 @@ body {
     background-color: white;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.50);
     height: 60px;
+    line-height: 60px;
   }
   
   #logo {
     float: left;
-  
-    /* 이건 지우세요 */
-    background-color: orange;
   }
   
+  .menu :hover {
+    background-color: #eeeeee;
+  }
+  .menu {
+    float: right;
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .hero-header {
-    background-image: url("../images/hero_image.jpg");
+    background-image: url("../IMAGE/hero_image.jpg");
     background-size: cover;
     background-position: center center;
     height: 670px;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
+    line-height: 670px;
   }
   
   .hero-header .info {
-    /* 이건 지우세요 */
-    background-color: orange;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
   }
   
   .hero-header .info h1 {

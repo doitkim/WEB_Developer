@@ -11,9 +11,39 @@ body {
     height: 100%;
     width: 250px;
     position: fixed;
+    padding-left: 20px;
   }
-  
+
   /* 코드를 입력하세요! */
+  #logo {
+    margin-top: 30px;
+    width: 136px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .list_menu {
+    margin-bottom: 30px;
+    list-style: none;
+  }
+
+  .list_menu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footter {
+    text-align: center;
+    margin-top: 85px;
+  }
+
+
+  .footter a:first-child {
+    margin-right: 13px;
+  }
+
   
   /* main */
   
@@ -23,7 +53,7 @@ body {
   
   #main .hero-header {
     text-align: center;
-    background-image: url("../images/hero_header.jpg");
+    background-image: url("../IMAGE/hero_header.jpg");
     background-size: cover;
     background-position: center center;
     height: 750px;
