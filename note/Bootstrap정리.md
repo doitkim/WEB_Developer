@@ -1218,3 +1218,4 @@ h1 {
 그 다음은 그냥 요소(또는 가상 요소)가 많은 순서입니다.
 <ul> 태그 안에 <li> 태그 안에 <a id="link">가 있다고 가정해봅시다. <ul>과 <li>는 나중에 배울 '리스트' 태그입니다.
 
+![image](https://user-images.githubusercontent.com/101789424/173265510-0af82015-bf8f-4890-b0f2-4e5d59e06d90.png)
