@@ -1219,3 +1219,608 @@ h1 {
 <ul> 태그 안에 <li> 태그 안에 <a id="link">가 있다고 가정해봅시다. <ul>과 <li>는 나중에 배울 '리스트' 태그입니다.
 
 ![image](https://user-images.githubusercontent.com/101789424/173265510-0af82015-bf8f-4890-b0f2-4e5d59e06d90.png)
+
+첫 번째 경우에는 일반 요소가 세 개, 가상 클래스가 한 개 있어서 '명시도 점수'가 13입니다. 두 번째 경우에는 일반 요소가 두 개, 가상 클래스가 한 개, 그리고 id가 한 개 있어서 112점입니다.
+
+따라서 두 선택자에서 겹치는 스타일이 있는 경우, 두 번째 경우인 ul li:first-child #link 선택자의 스타일이 적용되는 거죠!
+
+ul li:first-child #link {
+  color: green;
+}
+
+ul li:first-child a {
+  color: orange;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CSS에는 px, rem, em, % 등 여러 단위가 있습니다. 폰트 크기 뿐만 아니라 padding, margin, width 등 다양한 속성들에 이 단위들을 사용할 수 있습니다.
+
+이 단위들의 차이에 대해 알아봅시다.
+
+px
+px는 절대적인 값입니다. 다른 요소의 값에 영향을 받지 않는다는 거죠.
+
+html {
+  font-size: 20px;
+}
+
+.container {
+  padding-top: 40px;
+  background-color: lime;
+}
+
+rem
+rem 은 상대적인 값입니다. 하지만 오직 <html> 태그의 font-size에만 영향을 받습니다.
+
+2rem은 <html> 태그의 font-size의 2배 크기입니다.
+
+html {
+  font-size: 20px;
+}
+
+.container {
+  padding-top: 2rem; /* html의 font-size * 2 = 40px */
+  background-color: lime;
+}
+
+em
+em도 rem과 마찬가지로 상대적인 값입니다. em은 자기 자신의 font-size를 기준으로 합니다.
+
+2em은 자기 자신의 font-size의 2배 크기입니다. 자기 자신의 font-size를 따로 정해주지 않을 경우, 상위 요소에서 상속받은 값을 기준으로 합니다.
+
+html {
+  font-size: 20px;
+}
+
+.container {
+  /* 자동으로 html의 font-size 20px을 상속받음 */
+  padding-top: 2em; /* 자신의 font-size * 2 = 40px */
+  background-color: lime;
+}
+
+만약 자기 자신에게 정해진 font-size가 있다면 그 값을 기준으로 em이 결정됩니다.
+
+html {
+  font-size: 20px;
+}
+
+.container {
+  font-size: 40px;
+  padding-top: 2em; /* 자신의 font-size * 2 = 80px */
+  background-color: lime;
+}
+
+퍼센트 (%)
+% 역시 상대적인 값이겠죠? %는 어느 항목에서 쓰이냐에 따라 다른 기준이 적용됩니다.
+
+예를 들어 font-size에서 %가 쓰일 경우, 상위 요소의 font-size에 곱해주는 방식으로 계산합니다.
+
+.container {
+  font-size: 20px;
+  background-color: lime;
+}
+
+.text {
+  font-size: 180%; /* 상위 요소인 container의 font-size * 1.8 = 36px */
+  background-color: skyblue;
+  margin: 0;
+}
+
+%가 margin이나 padding의 단위로 사용될 경우, 상위 요소의 width를 기준으로 계산됩니다.
+
+.container {
+  width: 200px;
+  background-color: lime;
+}
+
+.text {
+  padding-left: 30%; /* 상위 요소의 width * 0.3 = 60px */
+}
+
+재미있는 점은 margin-top이나 padding-bottom 등 세로(상하) 속성를 조절할 때에도 상위 요소의 height가 아닌 width를 기준으로 계산된다는 것입니다.
+
+.container {
+  width: 200px;
+  background-color: lime;
+}
+
+.text {
+  padding-top: 30%; /* 상위 요소의 width * 0.3 = 60px */
+}
+
+참고
+더 자세히 알아보고 싶으신 분들은 아래 링크를 참고해보세요:
+
+https://webdesign.tutsplus.com/ko/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML 요소의 레이아웃을 결정하는 가장 중요한 속성 중 하나는 display입니다.
+
+display의 종류
+모든 요소는 딱 한 개의 display 값을 갖고 있습니다. 가질 수 있는 display의 종류는
+
+inline
+block
+inline-block
+flex
+list-item
+none
+등 여러 가지가 있는데, 대부분의 요소들은 inline과 block 중 한 가지입니다.
+
+inline display
+inline 요소들은 다른 요소들과 같은 줄에 머무르려고 하는 성향과, 필요한 만큼의 가로 길이만 차지하는 성향이 있습니다.
+
+다음 요소들은 기본 display 값이 inline입니다.
+
+<span>
+<a>
+<b>
+<i>
+<img>
+<button>
+
+
+i {
+  background-color: green;
+}
+
+<i> 태그는 기본적으로 inline이기 때문에 앞, 뒤의 텍스트와 같은 줄에 머무르고 있고, 가로 길이는 필요한 만큼만 차지하고 있습니다.
+
+block display
+block 요소들은 다른 요소들과 독단적인 줄에 가려고 하는 성향과, 최대한 많은 가로 길이를 차지하는 성향이 있습니다.
+
+다음 요소들은 기본 display 값이 block입니다.
+
+<div>
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+<p>
+<nav>
+<ul>
+<li>
+
+div {
+  background-color: green;
+}
+
+<div> 태그는 기본적으로 block이기 때문에 새로운 줄에 가버립니다. 그리고 가로 길이는 최대한 많이, 100%를 차지하고 있죠?
+
+display 바꾸기
+모든 요소는 기본적으로 정해진 display 값이 있는데요. CSS를 통해서 이를 바꿀 수 있습니다!
+
+inline 요소를 block으로 바꾸기
+
+i {
+  display: block; /* <i> 태그를 block으로 바꾸기 */
+  background-color: green;
+}
+
+block 요소를 inline으로 바꾸기
+
+div {
+  display: inline; /* <div> 태그를 inline으로 바꾸기 */
+}
+
+.div1 {
+  background-color: green;
+}
+
+.div2 {
+  background-color: blue;
+}
+
+Block 요소에게는 가로 길이와 세로 길이를 직접 설정해줄 수 있지만, inline 요소는 자동으로 설정이 됩니다. Inline 요소에게는 가로, 세로 길이의 개념이 딱히 없는 셈이죠.
+
+만약 inline 요소처럼 다른 요소들과 같은 줄에 머무르면서 block 요소처럼 가로, 세로 길이도 설정해주고 싶으면 어떻게 해야 할까요? 바로 그 둘을 섞어놓은 inline-block을 사용하면 됩니다!
+
+inline-block
+
+i {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+가로 가운데 정렬
+세로 가운데 정렬을 알아보기 전에, 간단하게 가로 가운데 정렬을 알아봅시다.  
+어떤 요소를 가로로 가운데 정렬하려면 어떻게 해야 할까요? 간단합니다.
+
+inline 요소
+inline 또는 inline-block 요소면 부모 태그에 text-align: center;를 써주면 됩니다.
+
+.container {
+  text-align: center;
+  background-color: lime;
+}
+
+block 요소
+block 요소면 margin-left: auto;, margin-right: auto;를 써주면 되죠?
+
+.block-element {
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lime;
+}
+
+세로 가운데 정렬
+그렇다면 세로로 가운데 정렬하려면 어떻게 해야 할까요? 저도 이것 때문에 짜증난 적이 많은데요! 사실 CSS에서 모든 걸 한 번에 딱 가운데 정렬을 시키는 방법이 없기 때문에, 저희가 지금까지 배운 다양한 지식을 섞어서 해야 합니다.
+
+몇 가지 방법을 봅시다.
+
+가짜 요소 더하기
+vertical-align: middle;을 하면 해결될까요? 우선 vertical-align 속성은 인라인 또는 인라인 블록 요소에 적용되기 때문에 .info를 인라인 블록으로 바꾸겠습니다. 그리고 vertical-align: middle;을 설정해주면...?
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+vertical-align: middle;은 요소의 가운데를 부모 요소의 소문자 'x'의 가운데와 맞춥니다. 확인해봅시다.
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info 요소를 완전 가운데로 오게 하려면 우선 소문자 'x'가 가운데로 와야 합니다. 방법이 하나 있습니다. 세로 길이가 100%인 요소를 만들고, 그 요소에도 vertical-align: middle;을 하는 거죠!
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  
+  /* 설명을 위해서 */
+  width: 10px;
+  background-color: red;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+이제 거의 다 되었습니다. 여기서 소문자 'x'를 지우고, .helper 요소의 가로 길이를 없애면 되겠죠?
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+근데 아직도 문제가 조금 있습니다. .info의 가로 길이가 100%라면 어떻게 되는지 봅시다.
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+갑자기 이상한 곳에 위치되네요. 사실 .helper 와 .info 요소 사이에 띄어쓰기가 한 칸 있어서, 가로 길이 100%인 .info 요소는 자리 부족으로 다음 줄로 가버립니다!
+
+이 문제를 해결하기 위해서는 두 가지 방법이 있습니다.
+
+우선 띄어쓰기를 없애는 방법:
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+띄어쓰기 공간 만큼의 마이너스 여백을 주는 방법:
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+
+  /* 이 경우 띄어쓰기는 5~7px 정도였습니다! */
+  margin-left: -7px;
+}
+
+주의 사항:
+
+어떤 요소에 height: 100%;를 설정하기 위해서는 부모의 height가 설정되어 있어야 합니다. 위 경우에는 .helper의 부모인 .container에 height가 설정되어 있었기 때문에 가능했던 것이죠.
+
+line-height로 해결
+.info를 인라인 블록으로 설정해주면, line-height 속성을 활용해볼 수도 있습니다. 부모인 .container에 height와 동일한 line-height를 줘보세요.
+
+line-height 속성은 자식들에게 상속되기 때문에 .info에는 line-height: normal;을 꼭 써주셔야 합니다!
+
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  text-align: center;
+  line-height: 400px;
+}
+
+.info {
+  background-color: lime;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+다른 방식?
+위의 방법들 말고도 세로 가운데 정렬을 하는 다양한 방식들이 있습니다. 포지셔닝을 이용할 수도 있고, 최근에 나온 flexbox를 이용할 수도 있습니다.
+위의 방식으로는 해결되지 않는 상황들도 있을 수 있기 때문에, 다양한 방식들을 연구하는 걸 추천드립니다!
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+제가 부트스트랩을 사용할 때 가장 마음에 드는 점은 간편한 그리드 시스템입니다.
+
+기본 구성원
+부트스트랩 그리드 시스템에는 세 가지 구성원이 있습니다:
+
+컨테이너 (container)
+행 (row)
+열 (column)
+기본 규칙
+부트스트랩 사이트에 자세히 설명되어 있지만 많은 분들이 무시하는 몇 가지 규칙입니다:
+
+행(<div class="row">)은 꼭 컨테이너(<div class="container">) 안에 넣어주세요.
+열(<div class="col">)은 꼭 행(<div class="row">) 안에 넣어주세요. 오직 열만 행의 직속 자식이 될 수 있습니다.
+콘텐츠(우리가 그리드에 넣고 싶은 내용)는 꼭 열(<div class="col">) 안에 넣어주세요.
+이 규칙들만 지켜도 예상치 못한 레이아웃이 나오지는 않을 것입니다!
+
+기본 사용법
+구성원들과 규칙을 알았으면 이제 사용법을 알아봅시다.
+
+부트스트랩 그리드에는 한 줄에 기본적으로 12칸의 열(column)이 있다고 생각하시면 됩니다. 예를 들어서 한 줄을 정확히 3등분하고 싶으면 네 칸을 차지하는 열 세 개를 쓰면 되는 거죠. 네 칸을 사용하는 열은 <div class="col-4">입니다.
+
+아래의 코드에서는 다양한 방식으로 12칸을 나누어보았습니다.
+
+.container {
+  text-align: center;
+}
+
+.first {
+  background-color: yellow;
+}
+
+.second {
+  background-color: lime;
+}
+
+.third {
+  background-color: orange;
+}
+
+12칸을 넘어가면?
+만약 한 행에 12칸이 넘는 열이 들어간다면, 새로운 줄로 넘어가게 됩니다.
+
+.container {
+  text-align: center;
+}
+
+.first {
+  background-color: yellow;
+}
+
+.second {
+  background-color: lime;
+}
+
+.third {
+  background-color: orange;
+}
+
+.fourth {
+  background-color: blue;
+}
+
+
+Why 12?
+부트스트랩을 만든 분들은 왜 하필 12라는 숫자로 정했을까요?
+
+12는 상당히 많은 숫자들(1, 2, 3, 4, 6, 12)로 나누어지기 때문에 굉장히 유연합니다!
+
+예를 들어서 8칸으로 나누고 싶더라도 12라는 숫자의 유연함 덕분에 쉽게 할 수 있습니다. col-6를 두 개 쓰면 2등분 할 수 있고, 그 안에서 또 col-3로 4등분을 하면 8칸이 생기겠죠?
+
+이런식으로 열을 또 여러 열로 나누는 것을 '중첩(nesting)'한다고 부릅니다. 중첩을 하기 위해서는 우선 열(<div class="col-6">) 안에 새로운 행(<div class="row">)을 쓰셔야 합니다. 예제를 통해 살펴보세요:
+
+.container {
+  text-align: center;
+}
+
+.first {
+  background-color: yellow;
+}
+
+.second {
+  background-color: lime;
+}
+
+.third {
+  background-color: orange;
+}
+
+.fourth {
+  background-color: blue;
+}
+
+부트스트랩의 그리드 시스템은 반응형 웹 디자인을 할 때 가장 빛을 발합니다.
+
+다음은 부트스트랩에서 정해둔 구간들입니다.
+
+Extra Small (< 576px): 모바일
+Small (≥ 576px): 모바일
+Medium (≥ 768px): 타블릿
+Large (≥ 992px): 데스크탑
+Extra Large (≥ 1200px): 와이드 데스크탑
+컨테이너 (container)
+기본적으로 컨테이너는 가운데 정렬이 되어 있고, 그리드의 행들을 감싸주는 역할을 합니다 (행들은 열들을 감싸주고 있고요!). 컨테이너의 종류는 두 가지인데요.
+
+<div class="container">: 구간별로 그리드에 고정된 width를 설정해줍니다.
+<div class="container-fluid">: 그리드는 항상 width: 100%;입니다.
+<div class="container">
+만약 구간별로 그리드에 고정된 가로값을 설정해주고 싶으면 "container" 클래스를 사용하세요. 구간별로 그리드가 고정되어 있으면 레이아웃이 더 예상 가능합니다. 따라서 저는 개인적으로 "container" 클래스를 사용하는 것을 선호하고, 디자이너에게 이렇게 구간별로 고정되는 방식으로 만들기를 부탁합니다!
+
+"container"클래스를 사용하면 아래의 CSS 코드가 적용됩니다.
+
+.container {
+  width: 100%; /* extra small */
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* small */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* medium */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* large */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+<div class="container-fluid">
+저는 많은 경우에 "container" 클래스를 선호하지만, 상황에 따라 그리드가 항상 100%의 가로 길이를 갖는 것이 좋을 때가 있습니다. 그럴 때는 "container-fluid" 클래스를 사용하면 됩니다.
+
+"container-fluid"클래스를 사용하면 아래의 CSS 코드가 적용됩니다.
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+열 (column)
+반응형 구간별로 (총 12칸 중) 열이 차지하는 칸의 개수도 다르게 할 수 있습니다.
+
+예시를 몇 가지 봅시다.
+
+예시 1 (구간별로 모두 설정되어 있는 경우)
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+Extra Small (< 576px): 12칸을 모두 차지
+Small (≥ 576px): 6칸 차지
+Medium (≥ 768px): 4칸 차지
+Large (≥ 992px): 3칸 차지
+Extra Large (≥ 1200px): 2칸 차지
+예시 2 (특정 구간만 설정되어 있는 경우)
+아래와 같이 특정 구간에만 열 수가 설정되어 있는 경우도 있습니다. 그렇다면 그 구간부터 새로운 설정이 있는 상위 구간까지는 같은 칸 수를 차지합니다.
+
+<div class="col-12 col-lg-3">
+Extra Small (< 576px): 12칸을 모두 차지
+Small (≥ 576px): 12칸을 모두 차지
+Medium (≥ 768px): 12칸을 모두 차지
+Large (≥ 992px): 3칸 차지
+Extra Large (≥ 1200px): 3칸 차지
+<div class="col-6">
+Extra Small (< 576px): 6칸 차지
+Small (≥ 576px): 6칸 차지
+Medium (≥ 768px): 6칸 차지
+Large (≥ 992px): 6칸 차지
+Extra Large (≥ 1200px): 6칸 차지
+
