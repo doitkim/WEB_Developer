@@ -2,116 +2,131 @@ body {
     margin: 0;
   }
 
-  @media (max-width:767px) {
+@media (max-width:767px) {
     #div1 {
-      height: 60px;
-      background-color: #FF0000;
+        background-color: red;
+        height: 60px;
     }
-
+    
     #div2 {
-      height: 350px;
-      background-color: #ffa500;
+        background-color: orange;
+        height: 350px;
     }
-
+    
+    
     #div3 {
-      height: 320px;
-      background-color: #ff0;
+        background-color: yellow;
+        height: 320px;
     }
-
+    
+    
     #div4 {
-      height: 385px;
-      background-color: #008000;
+        background-color: green;
+        height: 385px;
     }
-
+    
+    
     #div5 {
-      height: 200px;
-      background-color: #00f;
+        background-color: blue;
+        height: 200px;
     }
-
+    
+    
     #div6 {
-      height: 200px;
-      background-color: #4b0082;
+        background-color: purple;
+        height: 200px;
     }
-  }
 
-  @media (min-width:768px) {
+}
+
+@media (min-width:768px) {
     #div1 {
-      height: 60px;
-      background-color: #FF0000;
+        background-color: red;
+        height: 60px;
     }
-  
+    
     #div2 {
-      height: 582px;
-      width: 100%;
-      background-color: #ffa500;
+        background-color: orange;
+        height: 562px;
+        width: 100%;
     }
-  
+    
+    
     #div3 {
-      height: 282px;
-      width: 100%;
-      background-color: #ff0;
+        background-color: yellow;
+        height: 282px;
+        width: 100%;
     }
-  
+    
+    
     #div4 {
-      height: 360px;
-      width: 50%;
-      background-color: #008000;
-      float: left;
+        background-color: green;
+        height: 360px;
+        width: 50%;
+        float: left;
     }
-  
+    
+    
     #div5 {
-      height: 180px;
-      width: 50%;
-      background-color: #00f;
-      float: left;
+        background-color: blue;
+        height: 180px;
+        width: 50%;
+        float: left;
     }
-  
+    
+    
     #div6 {
-      height: 180px;
-      width: 50%;
-      background-color: #4b0082;
-      float: left;
+        background-color: purple;
+        height: 180px;
+        width: 50%;
+        float: left;
     }
-  }
 
-  @media (min-width:992px) {
+}
+
+@media (min-width:992px) {
     #div1 {
-      height: 60px;
-      background-color: #FF0000;
+        background-color: red;
+        height: 60px;
     }
-  
+    
     #div2 {
-      height: 700px;
-      width: 50%;
-      background-color: #ffa500;
-      float: left;
+        background-color: orange;
+        height: 700px;
+        width: 50%;
+        float: left;
     }
-  
+    
+    
     #div3 {
-      height: 350px;
-      width: 50%;
-      background-color: #ff0;
-      float: left;
+        background-color: yellow;
+        height: 350px;
+        width: 50%;
+        float: left;
     }
-  
+    
+    
     #div4 {
-      height: 350px;
-      width: 25%;
-      background-color: #008000;
-      float: left;
+        background-color: green;
+        height: 350px;
+        width: 25%;
+        float: left;
     }
-  
+    
+    
     #div5 {
-      height: 175px;
-      width: 25%;
-      background-color: #00f;
-      float: left;
+        background-color: blue;
+        height: 175px;
+        width: 25%;
+        float: left;
     }
-  
+    
+    
     #div6 {
-      height: 175px;
-      width: 25%;
-      background-color: #4b0082;
-      float: left;
+        background-color: purple;
+        height: 175px;
+        width: 25%;
+        float: left;
     }
-  }
+
+}
