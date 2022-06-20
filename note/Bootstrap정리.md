@@ -183,6 +183,7 @@ HTML 요소에게 '이름'을 주는 방법은 두 가지가 있습니다:
 
 클래스 (class)
 아이디 (id)
+
 클래스 (class)
 <p class="big-blue-text">First</p>
 <p>Second</p>
