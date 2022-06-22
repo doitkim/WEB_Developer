@@ -615,3 +615,49 @@ let date3 = new Date('Dec 15 1999 05:25:30');
 하지만 이런 방식을 사용하다보면 브라우저나, 컴퓨터를 사용하는 위치의 시간대에 따라 서로 다른 결과 값이 나올 수도 있기 때문에 적어도 IETF 호환 RFC 2822 타임스탬프와 ISO8601의 한 버전의 형식을 준수하는 문자열로 Date객체를 생성하는 것을 권장드립니다!
 
 더 많은 내용을 알고싶다면 이 링크를 참고해보세요!
+
+
+배열에서 특정 값 찾기 (indexOf / lastIndexOf)
+배열에서 특정 값을 찾으려면 indexOf 메소드를 사용하면 됩니다. array.indexOf(item)을 하면 array 배열에 item이 포함되어 있는지 확인할 수 있습니다.
+
+만약 포함되어 있다면, item이 있는 인덱스가 리턴됩니다.
+포함되어 있지 않다면, -1이 리턴됩니다.
+여러 번 포함되어 있으면, 처음 발견된 인덱스가 리턴됩니다.
+let brands = ['Google', 'Kakao', 'Naver', 'Kakao'];
+console.log(brands.indexOf('Kakao'));
+console.log(brands.indexOf('Daum'));
+1
+-1
+그리고 비슷하게 lastIndexOf라는 메소드가 있는데요. indexOf와는 반대로 탐색을 뒤에서 부터 하게 됩니다. 그러니깐 방금과 같은 경우에 'Kakao'를 lastIndexOf 메소드로 찾게 되면 마지막에 있는 인덱스가 리턴되겠죠?
+
+let brands = ['Google', 'Kakao', 'Naver', 'Kakao'];
+console.log(brands.lastIndexOf('Kakao'));
+console.log(brands.lastIndexOf('Daum'));
+3
+-1
+배열에서 특정 값이 있는지 확인하기 (includes)
+indexOf/lastIndexOf는 특정 값을 찾아서 해당 값의 index를 알려줍니다.
+하지만, 때로는 그냥 그 값이 배열안에 있는지, 그 여부만 확인하고 싶을 수도 있는데요. 그럴때는 includes 라는 메소드를 활용하면 됩니다.
+
+array.includes(item)을 하게되면 array배열에 item이 있을 경우 true를, 없을 경우 false를 리턴합니다.
+
+let brands = ['Google', 'Kakao', 'Naver', 'Kakao'];
+console.log(brands.includes('Kakao'));
+console.log(brands.includes('Daum'));
+true
+false
+배열 뒤집기 (reverse)
+reverse라는 메소드를 활용하면, 배열의 순서를 뒤집을 수도 있습니다.
+
+let brands = ['Google', 'Kakao', 'Naver', 'Kakao'];
+console.log(brands);
+brands.reverse();
+console.log(brands);
+(4) ["Google", "Kakao", "Naver", "Kakao"]
+(4) ["Kakao", "Naver", "Kakao", "Google"]
+그리고...
+사실 이 밖에도 배열이 가지고 있는 유용한 메소드들이 다양하게 있는데요.
+
+더 많은 내용을 알고싶다면, 이 링크를 참고해보세요!
+
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
