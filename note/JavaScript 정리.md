@@ -661,3 +661,255 @@ console.log(brands);
 더 많은 내용을 알고싶다면, 이 링크를 참고해보세요!
 
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+Date객체처럼 자바스크립트의 내장 객체 중 다양한 연산들을 유용하게 사용하기 위해 Math라는 객체가 있습니다.
+
+이번 노트에서는 Math객체의 다양한 메소드에 대해 살펴봅시다.
+
+절댓값 (Absolute Number)
+학창 시절 수학 시간에서 배운 '절댓값(absolute value)' 기억하시나요?
+
+간단하게 설명하자면, 어떤 값의 '양수(positive number)' 버전이라고 할 수 있습니다. 음수 -5의 절댓값은 양수 5고, 그냥 양수 5의 절댓값은 그대로 양수 5인 거죠.
+
+Math.abs(x)를 하면 x의 절댓값이 리턴됩니다.
+
+console.log(Math.abs(-10));
+console.log(Math.abs(10));
+10
+10
+최댓값 (Maximum)
+Math.max 함수에 파라미터로 여러 수를 넘겨주면, 그중 가장 큰 값이 리턴됩니다.
+
+console.log(Math.max(2, -1, 4, 5, 0));
+5
+최솟값 (Minimum)
+Math.min 함수에 파라미터로 여러 수를 넘겨주면, 그중 가장 작은 값이 리턴됩니다.
+
+console.log(Math.min(2, -1, 4, 5, 0));
+-1
+거듭제곱 (Exponentiation)
+'제곱'의 개념 기억하시나요? '2의 3승'(혹은 '2의 세제곱')을 하면, 2를 세 번 곱한다는 뜻입니다. '2 곱하기 2 곱하기 2'를 하면 8이죠? 마찬가지로 '5의 2승'을 하면, '5 곱하기 5'를 해서 25입니다.
+
+자바스크립트에서 Math.pow(x, y)를 하면 x의 y승의 결괏값이 리턴됩니다.
+
+console.log(Math.pow(2, 3));
+console.log(Math.pow(5, 2));
+8
+25
+제곱근 (Square Root)
+'제곱근(square root)'은 '제곱'의 반대라고 생각할 수 있습니다. 5의 제곱이 25이기 때문에, 25의 제곱근은 5입니다. 7의 제곱이 49이기 때문에, 49의 제곱근은 7입니다.
+
+Math.sqrt(x)를 하면 x의 제곱근이 리턴됩니다.
+
+console.log(Math.sqrt(25));
+console.log(Math.sqrt(49));
+5
+7
+반올림 (Round)
+Math.round(x)를 하면 x의 반올림된 값이 리턴됩니다. 소수점 부분이 0.5 이상이면 가장 가까운 정숫값으로 올라가고, 소수점 부분이 0.5 미만이면 가장 가까운 정숫값으로 내려갑니다.
+
+console.log(Math.round(2.3));
+console.log(Math.round(2.4));
+console.log(Math.round(2.49));
+console.log(Math.round(2.5));
+console.log(Math.round(2.6));
+2
+2
+2
+3
+3
+버림과 올림 (Floor and Ceil)
+Math.floor(x)을 하면 x의 버림 값이, Math.ceil(x)을 하면 x의 올림 값이 리턴됩니다. 이 경우, 소수 부분이 얼마 인지와는 상관이 없습니다.
+
+console.log(Math.floor(2.4));
+console.log(Math.floor(2.49));
+console.log(Math.floor(2.8));
+console.log('-');
+console.log(Math.ceil(2.4));
+console.log(Math.ceil(2.49));
+console.log(Math.ceil(2.8));
+2
+2
+2
+-
+3
+3
+3
+난수 (Random)
+Math.random을 하면 0 이상 1 미만의 값이 랜덤으로 리턴됩니다.
+
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+0.21458369059793236
+0.6622040803059857
+0.785172717569619
+0.9056556038884926
+그리고...
+이뿐만 아니라 '삼각 함수 계산'이나 '로그'같은 더 깊은 수학 계산도 가능합니다. 더 깊게 알아보고 싶다면 이 링크 를 참고해보세요!
+
+문자열도 생각해보면 '문자' + '열'이기 때문에 배열과 비슷한 부분들이 많습니다.
+
+비슷한 점
+실제로 지난 시간에 배열과 문자열 모두 length프로퍼티를 가지고 있고, 대괄호 표기법으로 각 요소에 접근할 수 있다거나..
+꽤 많은 메소드들이 배열과 문자열 모두 동일하게 사용되는 것도 확인할 수 있었는데요. 심지어 지난 시간에 다루진 못했지만 배열을 다룰 때 유용한 for..of문을 문자열에 활용할 수도 있습니다.
+
+let myString = 'Codeit';
+
+for (let str of myString) {
+  console.log(str);
+}
+C
+o
+d
+e
+i
+t
+다른 점
+하지만 비슷하다고 해서 완전히 같다고는 할 수 없습니다.
+
+let myString = 'Codeit';
+let myArray = ['C', 'o', 'd', 'e', 'i', 't'];
+
+console.log(typeof myString);
+console.log(typeof myArray);
+일단 typeof 연산자를 사용해서 두 값의 자료형을 비교해보면,
+
+string
+object
+string과 object, 확실히 서로 다른 자료형인 걸 확인할 수 있고,
+
+let myString = 'Codeit';
+let myArray = ['C', 'o', 'd', 'e', 'i', 't'];
+
+console.log(myString === myArray);
+console.log(myString == myArray);
+두 값을 서로 비교해 보아도
+
+false
+false
+일치 비교뿐만 아니라, 느슨하게 비교하는 동등비교에서도 false가 출력되는걸 확인할 수 있습니다.
+
+mutable vs. immutable
+가장 중요한 차이는 배열은 'mutable(바뀔 수 있는)' 자료형인 반면 문자열은 'immutable(바뀔 수 없는)' 자료형이라는 것입니다.
+
+배열은 요소에 접근해서 할당연산자를 통해 요소를 수정할 수 있었죠?
+
+문자열은 한 번 할당된 값을 수정할 수 없습니다. 다르게 표현해서, 변수에 할당된 문자열을 바꾸고 싶다면, 일부를 바꾸는 게 아니라 새로운 문자열을 지정해주어야 한다는 것이죠.
+
+// 배열은 mutable
+let myArray = ['C', 'o', 'd', 'e', 'i', 't'];
+myArray[0] = 'B';
+console.log(myArray);
+
+// 문자열은 immutable
+let myString = 'Codeit';
+myString[0] = 'B';
+console.log(myString);
+(6) ["B", "o", "d", "e", "i", "t"]
+Codeit
+다시 한번 되돌아보면, 문자열이 가진 메소드들은 모두 retrun 값들을 활용하고, 본래의 문자열 값을 수정하지 않습니다. 
+같은 의미에서 문자열에 splice 같은 메소드들은 사용할 수 없겠죠?
+
+문자열과 배열은 서로 비슷하지만 엄연히 다른 차이가 있다는 점 꼭 기억해 주세요!
+
+
+자바스크립트에는 variable의 약자를 따서 var라는 키워드로 변수를 선언할 때가 있었습니다.
+자바스크립트에 변수를 선언하는 방식은 처음부터 let과 const가 아니였던 것이죠!
+
+그래서 오래된 프로젝트들이나 혹은 자바스크립트의 정보들을 정리해둔 조금 오랜 시간이 지난 블로그들을 살펴보면 심심찮게 var라는 키워드를 만나볼 수가 있는데요.
+
+이제는 거의 사용되지 않는 var 변수, 그래도 언제 어떻게 만나게 될지 모르니 조금만 살펴봅시다. 어떤 문제가 있길래 사용되지 않는지, 가볍게라도 알고 있는 게 좋겠죠?
+
+변수 선언
+일단 아래 코드 처럼 var 변수는 let 이나 const 처럼 똑같이 키워드 다음에 변수이름을 써서 선언할 수 있고,
+
+var myVariable;
+
+myVariable = 'codeit';
+혹은 키워드와 변수이름, 그리고 할당연산자와 값으로 선언과 동시에 값을 할당해 줄 수도 있습니다.
+
+var myVariable = 'codeit';
+중복 선언 허용
+var 키워드로 선언한 변수의 첫 번째 문제는, let과 const와는 다르게 중복 선언이 가능하다는 겁니다.
+똑같은 이름으로 변수를 한 번 더 선언하게 되면, 에러가 발생하는 것이 아니라 그냥 기존의 변수를 덮어써 버리는 것이죠. let키워드로 선언한 변수에 값을 재할당하는 것과는 엄연히 다릅니다.
+
+var myVariable = 'codeit';
+console.log(myVariable);
+var myVariable = 'Codeit!';
+console.log(myVariable);
+codeit
+Codeit!
+이렇게 변수가 중복선언이 되면, 길고 복잡한 코드를 작성할 때 실수를 할 가능성이 커지고, 상황에 따라서는 치명적인 오류가 발생할 수 있습니다.
+
+함수 스코프
+var 키워드 변수가 사라진 두 번째 문제는 Scope의 문제입니다. 
+let과 const 키워드로 선언한 변수는 if, for, function 등등 어떤 키워드와 관계없이 코드 블록, 즉 {} 중괄호로 감싸진 부분을 기준으로 scope를 갖게 되지만, var 키워드로 선언한 변수는 scope가 function에서만 구분되어 있습니다.
+
+{
+  let x = 3;
+}
+
+function myFunction() {
+  let y = 4;
+}
+
+console.log(x);
+console.log(y);
+Uncaught ReferenceError: x is not defined
+let이나 const 키워드의 경우에는 중괄호로 감싸진 경우라면 모두 중괄호 밖에서는 지역 변수에 접근할 수 없습니다.
+
+{
+  var x = 3;
+}
+
+function myFunction() {
+  var y = 4;
+}
+
+console.log(x);
+console.log(y);
+3
+Uncaught ReferenceError: y is not defined
+하지만 var 변수는 지역변수의 구분이 함수에만 있기 때문에 if, for, while, switch 등 다양한 상황에서 선언한 변수가 자칫, 전역변수의 역할을 하게 될 수도 있는 것이죠.
+
+참고로 이렇게 함수를 기준으로만 적용되는 스코프를 함수 스코프, 코드 블록을 기준으로 적용되는 스코프를 블록 스코프라는 용어를 사용한다는 점도 참고해 주세요! :)
+
+끌어올림 (Hoisting)
+console.log(myVariable);
+let myVariable;
+Uncaught ReferenceError: Cannot access 'myVariable' before initialization
+let과 const로 선언한 변수는 선언되기 이전에 사용될 수 없습니다. 하지만, var 변수는 함수 스코프를 기준으로 선언되기 이전에도 변수에 접근이 가능한데요.
+
+console.log(myVariable);
+var myVariable;
+undefined
+변수의 선언이 끌려 올라가서 마치, 2번째 줄과 첫 번째 줄이 바뀐 것처럼 동작하는 데요.
+
+var myVariable;
+console.log(myVariable);
+이렇게 변수가 끌어올려 지는 현상을 '호이스팅(hoisting)'이라고 부른다는 점도 기억해 두시면 좋을 것 같아요 :)
+다행히 호이스팅은 선언과 동시에 값을 할당하더라도, 선언문만 올려지기 때문에 값은 그대로 두 번째 줄에 남아있는 데요.
+
+console.log(myVariable);
+var myVariable = 2;
+console.log(myVariable);
+undefined
+2
+하지만 이런 식으로 동작하는 방식은 코드의 흐름을 방해하기에 충분해 보이죠? 한 가지 주의해야 될 부분은, 함수를 선언할 때도 이 호이스팅이 적용됩니다.
+
+sayHi();
+
+function sayHi() {
+  console.log('hi');
+}
+이렇게 코드를 작성하더라도 실행해보면,
+
+hi
+당연한 듯 함수가 잘 실행되는 모습을 확인할 수 있습니다.
+
+이런 현상은 함수를 한 번 선언하고 나면 어디서든 유연하게 사용할 수 있다는 장점이 있지만, 코드의 흐름에는 부정적인 영향을 끼칠 수 있습니다. 그래서 함수를 선언할 떄는 가급적 코드 윗부분에 선언하거나, 호출을 항상 아래쪽에서 한다거나 나름대로 규칙을 세워서 코드를 작성하시기를 권장드립니다 :)
+
+자, 지금까지 오래된 자바스크립트에서 변수를 만들 때 사용했던 var 키워드에 대해서 살펴봤는데요.
+요즘은 잘 사용되지 않지만, 그래도 자바스크립트의 상식적인 측면에서 가볍게 이해하고 계시면 좋을 것 같습니다! :)
