@@ -953,6 +953,7 @@ Array 객체의 isArray 메소드는 파라미터로 전달한 값이 배열인�
 document.getElementsByTagName('태그이름')메소드를 활용하면 태그 이름으로 태그를 선택할 수 있습니다.
 
 const btns = document.getElementsByTagName('button');
+
 이렇게 하면 HTML 문서 내에 있는 모든 button 태그를 선택하게 됩니다.
 
 태그이름으로태그선택하기
