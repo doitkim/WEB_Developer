@@ -957,20 +957,24 @@ Array 객체의 isArray 메소드는 파라미터로 전달한 값이 배열인�
 document.getElementsByTagName('태그이름')메소드를 활용하면 태그 이름으로 태그를 선택할 수 있습니다.
 
 const btns = document.getElementsByTagName('button');
+![image](https://user-images.githubusercontent.com/101789424/175852938-115aafc8-5c64-4511-9dd0-6a8f336960aa.png)
 
 이렇게 하면 HTML 문서 내에 있는 모든 button 태그를 선택하게 됩니다.
+![image](https://user-images.githubusercontent.com/101789424/175852959-2fdbc43f-0b55-47bd-9015-e3736fa0f12b.png)
 
 태그이름으로태그선택하기
 
 document.getElementsByClassName('class')메소드와 마찬가지로 태그 이름으로 요소를 찾는 경우에 여러 개의 요소가 선택될 수 있기 때문에 메소드 이름에 Element(s), s가 있고, 실행결과 역시 HTMLCollection을 리턴한다는 점도 함께 기억해 두시면 좋을 것 같습니다.
 
 참고로 css 선택자처럼 '*' 값을 전달하게 되면 모든 태그를 선택할 수도 있는데요.
+![image](https://user-images.githubusercontent.com/101789424/175852988-69bcc2af-c443-4ad6-81e3-8ec8ae9ca91b.png)
 
 const btns = document.getElementsByTagName('button');
 const allTags = document.getElementsByTagName('*');
 하지만, css 스타일링을 할 때도 태그 이름으로 스타일링을 하는 경우는 거의 없죠?
 
 마찬가지로 명확한 의도가 없이 이렇게 많은 요소들을 한꺼번에 다루게 되면 예상치 못한 실수를 할 가능성이 있기 때문에 자바스크립트에서도 많이 사용되는 메소드는 아닙니다.
+<<<<<<< HEAD
 
 
 2. 유사 배열이란?
@@ -987,3 +991,5 @@ Array.isArray(유사배열)의 리턴값은 false다.
 이벤트 핸들링 : 자바스크립트를 통해 이벤트를 다루는 일
 
 이벤트 핸들러 : 이벤트가 발생했을 때 일어나야하는 구체적인 동작들을 표현한 코드. 이벤트 리스너(Event Listener)라고도 부른다.
+=======
+>>>>>>> e91cbc193f5d29479098c9ecf9e39798e568fcdf
