@@ -957,14 +957,17 @@ Array 객체의 isArray 메소드는 파라미터로 전달한 값이 배열인�
 document.getElementsByTagName('태그이름')메소드를 활용하면 태그 이름으로 태그를 선택할 수 있습니다.
 
 const btns = document.getElementsByTagName('button');
+![image](https://user-images.githubusercontent.com/101789424/175852938-115aafc8-5c64-4511-9dd0-6a8f336960aa.png)
 
 이렇게 하면 HTML 문서 내에 있는 모든 button 태그를 선택하게 됩니다.
+![image](https://user-images.githubusercontent.com/101789424/175852959-2fdbc43f-0b55-47bd-9015-e3736fa0f12b.png)
 
 태그이름으로태그선택하기
 
 document.getElementsByClassName('class')메소드와 마찬가지로 태그 이름으로 요소를 찾는 경우에 여러 개의 요소가 선택될 수 있기 때문에 메소드 이름에 Element(s), s가 있고, 실행결과 역시 HTMLCollection을 리턴한다는 점도 함께 기억해 두시면 좋을 것 같습니다.
 
 참고로 css 선택자처럼 '*' 값을 전달하게 되면 모든 태그를 선택할 수도 있는데요.
+![image](https://user-images.githubusercontent.com/101789424/175852988-69bcc2af-c443-4ad6-81e3-8ec8ae9ca91b.png)
 
 const btns = document.getElementsByTagName('button');
 const allTags = document.getElementsByTagName('*');
