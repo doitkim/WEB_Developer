@@ -975,6 +975,8 @@ const allTags = document.getElementsByTagName('*');
 
 마찬가지로 명확한 의도가 없이 이렇게 많은 요소들을 한꺼번에 다루게 되면 예상치 못한 실수를 할 가능성이 있기 때문에 자바스크립트에서도 많이 사용되는 메소드는 아닙니다.
 
+![image](https://user-images.githubusercontent.com/101789424/175856055-c9a8a1a6-37ba-4047-a6cf-875c03964809.png)
+
 2. 유사 배열이란?
 배열과 유사한 객체 ex) HTMLCollection, NodeList, DOMTokenList, ...
 특징
@@ -985,6 +987,8 @@ Array.isArray(유사배열)의 리턴값은 false다.
 3. 이벤트와 이벤트 핸들링, 그리고 이벤트 핸들러
 이벤트 : 웹 페이지에서 발생하는 대부분의 일(사건)들
   ex) 버튼 클릭, 스크롤, 키보드 입력, ...
+
+![image](https://user-images.githubusercontent.com/101789424/175856072-30c85c78-1643-46a6-9006-a37a1a347f03.png)
 
 이벤트 핸들링 : 자바스크립트를 통해 이벤트를 다루는 일
 
