@@ -975,6 +975,8 @@ const allTags = document.getElementsByTagName('*');
 
 마찬가지로 명확한 의도가 없이 이렇게 많은 요소들을 한꺼번에 다루게 되면 예상치 못한 실수를 할 가능성이 있기 때문에 자바스크립트에서도 많이 사용되는 메소드는 아닙니다.
 
+![image](https://user-images.githubusercontent.com/101789424/175856055-c9a8a1a6-37ba-4047-a6cf-875c03964809.png)
+
 2. 유사 배열이란?
 배열과 유사한 객체 ex) HTMLCollection, NodeList, DOMTokenList, ...
 특징
@@ -986,6 +988,34 @@ Array.isArray(유사배열)의 리턴값은 false다.
 이벤트 : 웹 페이지에서 발생하는 대부분의 일(사건)들
   ex) 버튼 클릭, 스크롤, 키보드 입력, ...
 
+![image](https://user-images.githubusercontent.com/101789424/175856072-30c85c78-1643-46a6-9006-a37a1a347f03.png)
+
 이벤트 핸들링 : 자바스크립트를 통해 이벤트를 다루는 일
 
 이벤트 핸들러 : 이벤트가 발생했을 때 일어나야하는 구체적인 동작들을 표현한 코드. 이벤트 리스너(Event Listener)라고도 부른다.
+
+![image](https://user-images.githubusercontent.com/101789424/176086567-c0d35bfe-88c9-4366-8d2f-655e84afc74a.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086580-23599e92-471a-479a-987e-6d9b7b3da1de.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086584-cda26702-1306-433e-aff9-465c430d9e56.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086588-df2f5798-f090-4627-9e32-635dc9d7a5dd.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086594-7d3e6777-78b9-4863-9280-40085e742da7.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086606-86104d99-671e-46bc-9f0f-a6a9fc24536f.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086613-afd39eb6-db1b-4f72-950a-e27b44465cd0.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087487-f8625021-1153-43d2-840e-bf70e66f17a5.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087501-b0bea3e4-e15e-4f64-97e3-1c55953d4926.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087508-80c3d5e5-a82c-48ca-bde0-2323a19d67d7.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087514-d64a1874-5837-422d-8bad-7f8da0011111.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087519-61975bbd-60a7-4096-915c-492a9c4f6efd.png)
+
+
