@@ -993,3 +993,18 @@ Array.isArray(유사배열)의 리턴값은 false다.
 이벤트 핸들링 : 자바스크립트를 통해 이벤트를 다루는 일
 
 이벤트 핸들러 : 이벤트가 발생했을 때 일어나야하는 구체적인 동작들을 표현한 코드. 이벤트 리스너(Event Listener)라고도 부른다.
+
+![image](https://user-images.githubusercontent.com/101789424/176086567-c0d35bfe-88c9-4366-8d2f-655e84afc74a.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086580-23599e92-471a-479a-987e-6d9b7b3da1de.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086584-cda26702-1306-433e-aff9-465c430d9e56.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086588-df2f5798-f090-4627-9e32-635dc9d7a5dd.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086594-7d3e6777-78b9-4863-9280-40085e742da7.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086606-86104d99-671e-46bc-9f0f-a6a9fc24536f.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176086613-afd39eb6-db1b-4f72-950a-e27b44465cd0.png)
+
