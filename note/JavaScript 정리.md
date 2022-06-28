@@ -1018,4 +1018,41 @@ Array.isArray(유사배열)의 리턴값은 false다.
 
 ![image](https://user-images.githubusercontent.com/101789424/176087519-61975bbd-60a7-4096-915c-492a9c4f6efd.png)
 
+지난 시간에 살펴본 요소 노드의 프로퍼티들을 한 번 더 복습하고 넘어갑시다!
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
+<body>
+  <div id="content">
+    <h2 id="title-1">Cat-1</h1>
+    <ul id="list-1">
+      <li>Ragdoll</li>
+      <li>British Shorthair</li>
+      <li>Scottish Fold</li>
+      <li>Bengal</li>
+      <li>Siamese</li>
+      <li>Maine Coon</li>
+      <li>American Shorthair</li>
+      <li>Russian Blue</li>
+    </ul>
+    <h2 id="title-2">Cat-2</h1>
+    <ul id="list-2">
+      <li>Sphynx</li>
+      <li>Munchkin</li>
+      <li>Persian</li>
+      <li>Norwegian Forset</li>
+      <li>Turkish Angora</li>
+      <li>Bombay</li>
+      <li>Selkirk Rex</li>
+      <li>Munchkin</li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
+
 
