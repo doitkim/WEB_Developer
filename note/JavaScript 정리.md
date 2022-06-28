@@ -1008,3 +1008,14 @@ Array.isArray(유사배열)의 리턴값은 false다.
 
 ![image](https://user-images.githubusercontent.com/101789424/176086613-afd39eb6-db1b-4f72-950a-e27b44465cd0.png)
 
+![image](https://user-images.githubusercontent.com/101789424/176087487-f8625021-1153-43d2-840e-bf70e66f17a5.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087501-b0bea3e4-e15e-4f64-97e3-1c55953d4926.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087508-80c3d5e5-a82c-48ca-bde0-2323a19d67d7.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087514-d64a1874-5837-422d-8bad-7f8da0011111.png)
+
+![image](https://user-images.githubusercontent.com/101789424/176087519-61975bbd-60a7-4096-915c-492a9c4f6efd.png)
+
+
