@@ -1,0 +1,46 @@
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.app-text {
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	color: white;
+	font-weight: bold;
+}
+
+.b_wrap{padding: 200px 0; overflow: hidden;}
+.b_wrap .busi_content_wrap {max-width: 1400px; margin: 0 auto;}
+.b_wrap .business_list {width: 100%; display: flex;}
+
+.b_wrap .business_list li a {display: block; position: relative; text-align: center; height: 100%; transition: box-shadow .2s;}
+.b_wrap .business_list li a .title {font-size: 23px; margin: 10px 0; font-weight: 500; color: #2e2e2e;}
+.subTitleEng {text-transform: uppercase; text-align: center; color: var(--pink-color); font-weight: 600; font-size: 15px; letter-spacing: 3px;}
+.b_wrap .business_list li a .img_wrap{position: relative; width: 100%; height: 185px}
+.b_wrap .business_list li a .img_wrap img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px;}
+.b_wrap .busi_content_wrap .business_list .flip:first-child img{width: 140px;}
+
+.b_wrap .business_list .flip{box-sizing: border-box; cursor: pointer; width: calc(100% / 4 - 3%); height: 350px; position: relative; margin: 0 1.5%;}
+.b_wrap .business_list .flip .flip-item{backface-visibility: hidden; background: #f6f6f6; transition: 1s; width: 100%; height: 100%;}
+.b_wrap .business_list .flip .front{position: absolute; backface-visibility: hidden; transition: 1s; transform: rotateY(0deg);}
+.b_wrap .business_list .flip .front a{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.b_wrap .business_list .flip .back {transform: rotateY(-180deg);display: flex; align-items: center; justify-content: space-between;flex-direction: column; }
+.b_wrap .business_list .flip:hover .front{transform: rotateY(180deg);}
+.b_wrap .business_list .flip:hover .back{transform: rotateY(0deg); }
+
+
+.b_wrap .busi_content_wrap .business_list .flip:first-child img{width: 170px;}
+
+.b_wrap .business_list li:hover .more_btn span{color:#fff;}
+.b_wrap .business_list li:hover .more_btn:before{left:0px; opacity:1.0;filter:Alpha(opacity=100);}
+.b_wrap .business_list li:hover .more_btn:after{opacity:0;filter:Alpha(opacity=0); visibility:hidden;}
+
+:root {
+	--navy-color: #04088a;
+	--pink-color: #ee72d8;
+}
