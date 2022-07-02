@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #navibar {
+        height: 60px;
+        background-color: #353535;
+        color: white;
+        font-size: 20px;
+        line-height: 60px;
+        padding-left: 30px;
+    }
+    
+    #first_image {
+        height: 350px;
+        background-image: url("../../INNO/IMAGE/main_img.jpg");
+        background-size: cover;
+        background-position: center center; 
+    }
+
+    .text_box {
+        height: 320px;
+        padding-left: 30px;
+        padding-right: 30px;
+        line-height: 320px;
+    }
+
+    .first_title {
+        margin-bottom: 10px;
+    }
+
+    .second_title {
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    #portfolio {
+        font-size: 16px;
+        color: #4a4a4a;
+        margin-bottom: 10px;
+        vertical-align: middle;
+        display: inline-block;
+        line-height: normal;
+    }
+
+    h1 {
+        font-size: 20px;
+        color: #1B1B1b;
+        margin-bottom: 30px;
+        
+    }
+
+    #second_image {
+        height: 385px;
+        background-image: url("../../INNO/IMAGE/img1.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #tird_image {
+        height: 200px;
+        background-image: url("../../INNO/IMAGE/img2.jpg");
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+        line-height: 200px;
+    }
+    
+    #viewmore  {
+        border: 4px solid white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 9px 40px;
+        display: inline-block;
+        line-height: normal;
+    }
+
+    #viewmore a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #forth_image {
+        height: 200px;
+        background-image: url("../../INNO/IMAGE/img3.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @media (min-width:768px) {
+
+        #navibar {
+            height: 60px;
+            background-color: #353535;
+            color: white;
+            font-size: 20px;
+            line-height: 60px;
+            padding-left: 30px;
+        }
+
+        #first_image {
+            height: 562px;
+            background-image: url("../../INNO/IMAGE/main_img.jpg");
+            background-size: cover;
+            background-position: center center; 
+            width: 100%;
+        }
+
+        .text_box {
+            height: 282px;
+            padding-left: 65px;
+            padding-right: 65px;
+            line-height: 282px;
+            width: 100%;
+        }
+
+        #second_image {
+            height: 360px;
+            background-image: url("../../INNO/IMAGE/img1.jpg");
+            background-size: cover;
+            background-position: center center;
+            width: 50%;
+            float: left;
+        }
+        
+        #tird_image {
+            height: 180px;
+            background-image: url("../../INNO/IMAGE/img2.jpg");
+            background-size: cover;
+            background-position: center center;
+            text-align: center;
+            line-height: 180px;
+            width: 50%;
+            float: left;
+        }
+        
+        #viewmore  {
+            border: 4px solid white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 9px 40px;
+            display: inline-block;
+            line-height: normal;
+        }
+    
+        #viewmore a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #forth_image {
+            height: 180px;
+            background-image: url("../../INNO/IMAGE/img3.jpg");
+            background-size: cover;
+            background-position: center center;
+            width: 50%;
+            float: left;
+        }
+    }
+
+    @media (min-width:992px) {
+        #navibar {
+            height: 60px;
+            background-color: #353535;
+            color: white;
+            font-size: 20px;
+            line-height: 60px;
+            padding-left: 30px;
+        }
+
+        #first_image {
+            height: 700px;
+            background-image: url("../../INNO/IMAGE/main_img.jpg");
+            background-size: cover;
+            background-position: center center; 
+            width: 50%;
+            float: left;
+        }
+
+        .text_box {
+            height: 350px;
+            padding-left: 65px;
+            padding-right: 65px;
+            line-height: 350px;
+            width: 50%;
+            float: left;
+        }
+
+        #second_image {
+            height: 350px;
+            background-image: url("../../INNO/IMAGE/img1.jpg");
+            background-size: cover;
+            background-position: center center;
+            width: 25%;
+            float: left;
+        }
+        
+        #tird_image {
+            height: 175px;
+            background-image: url("../../INNO/IMAGE/img2.jpg");
+            background-size: cover;
+            background-position: center center;
+            text-align: center;
+            line-height: 180px;
+            width: 25%;
+            float: left;
+        }
+        
+        #viewmore  {
+            border: 4px solid white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 9px 40px;
+            display: inline-block;
+            line-height: normal;
+        }
+    
+        #viewmore a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #forth_image {
+            height: 175px;
+            background-image: url("../../INNO/IMAGE/img3.jpg");
+            background-size: cover;
+            background-position: center center;
+            width: 25%;
+            float: left;
+        }
+    }

@@ -10,32 +10,33 @@ body {
   }
 
   .carousel-item.item1 {
-    background-image: url('../IMAGE/guitar.jpg');
+    background-image: url('../../jaeneng/IMAGE/guitar.jpg');
     background-position: left center;
 
   }
 
   .carousel-item.item2 {
-    background-image: url('../IMAGE/makeup.jpg');
+    background-image: url('../../jaeneng/IMAGE/makeup.jpg');
     background-position: center top;
   }
 
   .carousel-item.item3 {
-    background-image: url('../IMAGE/cooking.jpg');
+    background-image: url('../../jaeneng/IMAGE/cooking.jpg');
     background-position: center center;
   }
 
-  .helper  {
+  .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
   }
 
   .intro {
+    color: white;
     display: inline-block;
     vertical-align: middle;
   }
-  
+
   .intro h2 {
     font-size: 32px;
     color: white;
