@@ -4,6 +4,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color: gainsboro;
 }
 
 #title {
@@ -35,6 +36,10 @@ body {
     border: 1px solid black;
     text-align: center;
     padding: 20px;
+}
+
+.Tier_num {
+    margin-top: 50px;
 }
 
 .Tier_num input {
@@ -94,4 +99,14 @@ input {
     margin-left: 10x;
     margin-right: 10px;
     
+}
+
+.Priv_Legue_record img{
+   text-align: center;
+   width: 100%;
+}
+
+#Priv_Legue_record_title {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
