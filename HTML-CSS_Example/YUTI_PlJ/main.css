@@ -16,7 +16,7 @@ a {
 
 .b_wrap{padding: 200px 0; overflow: hidden;}
 .b_wrap .busi_content_wrap {max-width: 1400px; margin: 0 auto;}
-.b_wrap .business_list {width: 100%; display: flex;}
+.b_wrap .business_list {width: 100%; display: flex; padding-left: 0px;}
 
 .b_wrap .business_list li a {display: block; position: relative; text-align: center; height: 100%; transition: box-shadow .2s;}
 .b_wrap .business_list li a .title {font-size: 23px; margin: 10px 0; font-weight: 500; color: #2e2e2e;}
@@ -44,3 +44,4 @@ a {
 	--navy-color: #04088a;
 	--pink-color: #ee72d8;
 }
+
