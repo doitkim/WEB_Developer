@@ -100,6 +100,16 @@ body {
     margin-right: auto;
 }
 
+#map_accetion {
+    height: 300px;
+    width: 300px;
+    background-image: url("./map_image/accention.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .map_title {
     font-size: 20px;
     font-weight: bold;
@@ -130,3 +140,4 @@ body {
     line-height: 40px;
     font-weight: bold;
 }
+
