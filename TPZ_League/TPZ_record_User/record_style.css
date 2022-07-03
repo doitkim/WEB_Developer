@@ -1,0 +1,132 @@
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    margin-bottom: 30px;
+}
+
+#navibar ul li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#navibar ul li {
+    line-height: 100px;
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+#navibar {
+    background-color: gray;
+    height: 100px;
+    width: 1040px;
+}
+
+#title_jawjaw {
+    border: 2px solid black;
+    margin-top: 50px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+#title_jawjaw h1 {
+    text-align: center;
+}
+
+.map_record {
+    border: 2px solid black;
+    margin-top: 25px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.map_title {
+    text-align: center;
+}
+
+#map_poli {
+    height: 300px;
+    width: 300px;
+    background-image: url("./map_image/polipoid.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_fighting {
+    height: 300px;
+    width: 300px;
+    background-image: url("./map_image/fighting.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_largo {
+    height: 300px;
+    width: 300px;
+    background-image: url("./map_image/largo.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_rivolver {
+    height: 300px;
+    width: 300px;
+    background-image: url("./map_image/rivolver.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map_title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.map_t {
+    background-color: gray;
+    height: 40px;
+}
+
+.map_t h3 {
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.map_winloss {
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 120px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}

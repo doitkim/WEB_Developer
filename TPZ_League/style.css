@@ -103,10 +103,35 @@ input {
 
 .Priv_Legue_record img{
    text-align: center;
-   width: 100%;
+   width: 780px;
 }
 
 #Priv_Legue_record_title {
+    margin-top: 50px;
     font-size: 30px;
     margin-bottom: 20px;
 }
+
+#rel_record_User {
+    margin-top: 20px;
+    margin-bottom: 50px;
+     border: 1px solid black;
+     border-radius: 10px;
+     width: 100%;
+     height: 150px;
+}
+
+li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
