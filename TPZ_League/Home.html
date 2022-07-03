@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TPZ 리그 현황</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="Tier_num">
+        <div id="Tier_title">티어 : 참여 횟수</div>
+        V :     <input id='v_num' onkeyup='printJoinRate()'/><br>
+        W :     <input id='w_num' onkeyup='printJoinRate()'/><br>
+        X :     <input id='x_num' onkeyup='printJoinRate()'/><br>
+        Y :     <input id='y_num' onkeyup='printJoinRate()'/><br>
+        Z :     <input id='z_num' onkeyup='printJoinRate()'/><br>
+        새싹 :  <input id='b_num' onkeyup='printJoinRate()'/><br>
+        총 참여 횟수 : <span id='total'></span>
+    </div>
+
+    <div class="Tribe_num">
+        <div id="Tribe_title">종족 : 참여 횟수</div>
+        T :     <input id='T_Tnum' onkeyup='printJoinTribeRate()'/><br>
+        P :     <input id='P_Tnum' onkeyup='printJoinTribeRate()'/><br>
+        Z :     <input id='Z_Tnum' onkeyup='printJoinTribeRate()'/><br>
+        총 참여 횟수 : <span id='tribe_total'></span>
+    </div>
+
+    <div id="title">
+        <h1>TPZ 리그 전적 현황</h1>
+    </div>
+    
+    <div id="Leage_user_grade">
+        <h3>티어별 리그 참가 비율 (%)</h3>
+        <div id="V">V : <span id='result_v'></span>%</div>
+        <div id="W">W : <span id='result_w'></span>%</div>
+        <div id="X">X : <span id='result_x'></span>%</div>
+        <div id="Y">Y : <span id='result_y'></span>%</div>
+        <div id="Z">Z : <span id='result_z'></span>%</div>
+        <div id="B">새싹 : <span id='result_b'></span>%</div>
+    </div>
+
+    <div id="Leage_user_tribe">
+        <h3>종족별 리그 참가 비율 (%)</h3>
+        <div id="Terran">T : <span id='result_tribe_T'></span>%</div>
+        <div id="Protoss">P : <span id='result_tribe_P'></span>%</div>
+        <div id="Zerg">Z : <span id='result_tribe_Z'></span>%</div>
+    </div>
+
+    <div id="tribe_rate">
+        <h3>맵별 종족 승리 횟수</h3>
+        <div class="map_list">
+            <br>투혼<br>
+            T : <input id='fighting_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_fighting_T'></span>%<br>
+            P : <input id='fighting_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_fighting_P'></span>%<br>
+            Z : <input id='fighting_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_fighting_Z'></span>%<br>
+            총 경기 횟수 : <span id='fighting_total'></span><br>
+        </div>
+        <div class="map_list">
+            <br>이클립스<br>
+            T : <input id='eclipse_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_eclipse_T'></span>%<br>
+            P : <input id='eclipse_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_eclipse_P'></span>%<br>
+            Z : <input id='eclipse_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_eclipse_Z'></span>%<br>
+        총 경기 횟수 : <span id='eclipse_total'></span><br>
+        </div>
+        
+        <div class="map_list">
+        <br>폴리포이드<br>
+            T : <input id='poli_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_poli_T'></span>%<br>
+            P : <input id='poli_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_poli_P'></span>%<br>
+            Z : <input id='poli_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_poli_Z'></span>%<br>
+            총 경기 횟수 : <span id='poli_total'></span><br>
+        </div>
+        <div class="map_list">
+        <br>어센션<br>
+            T : <input id='accention_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_accention_T'></span>%<br>
+            P : <input id='accention_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_accention_P'></span>%<br>
+            Z : <input id='accention_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_accention_Z'></span>%<br>
+            총 경기 횟수 : <span id='accention_total'></span><br>
+        </div>
+        <div class="map_list">
+        <br>라르고<br>
+            T : <input id='largo_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_largo_T'></span>%<br>
+            P : <input id='largo_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_largo_P'></span>%<br>
+            Z : <input id='largo_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_largo_Z'></span>%<br>
+            총 경기 횟수 : <span id='largo_total'></span><br>
+        </div>
+        <div class="map_list">
+        <br>굿나잇<br>
+            T : <input id='goodnight_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_goodnight_T'></span>%<br>
+            P : <input id='goodnight_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_goodnight_P'></span>%<br>
+            Z : <input id='goodnight_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_goodnight_Z'></span>%<br>
+            총 경기 횟수 : <span id='goodnight_total'></span><br>
+        </div>
+        <div class="map_list">
+        <br>리볼버<br>
+            T : <input id='rivolber_T' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_rivolber_T'></span>%<br>
+            P : <input id='rivolber_P' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_rivolber_P'></span>%<br>
+            Z : <input id='rivolber_Z' onkeyup='mapWinRate()'/> 비율(%) : <span id='result_rivolber_Z'></span>%<br>
+            총 경기 횟수 : <span id='rivolber_total'></span><br>
+        </div>
+    </div>
+        
+    
+</body>
+</html>

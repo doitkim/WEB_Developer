@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#title h1 {
+    line-height: 100px;
+    color: white;
+}
+#Leage_user_grade, #Leage_user_tribe, #tribe_rate {
+    border: 1px solid black; 
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.Tier_num, .Tribe_num {
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.Tier_num input {
+    width: 50px;
+}
+
+.Tribe_num input {
+    width: 50px;
+}
+
+#Tier_title, #Tribe_title {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+#Leage_user_grade div {
+    margin-bottom: 10px;
+}
+
+.Tribe_num {
+    margin-top: 50px;
+}
+
+#Leage_user_tribe div {
+    margin-bottom: 10px;
+}
+
+#Leage_user_tribe {
+    height: 180px;
+}
+
+#tribe_rate {
+    padding: 20px;
+    height: 800px;
+    width: 780px;
+    text-align: left;
+}
+
+#tribe_rate h3 {
+    text-align: center;
+}
+
+.map_list {
+    padding: 10px;
+    width: 350px;
+    height: 170px;
+    display: inline-block;
+    margin-left: 10x;
+    margin-right: 10px;
+    
+}
