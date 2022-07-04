@@ -175,18 +175,31 @@
 }
 
 .member_list{
+    border: 0px solid red;
     margin-top: 30px;
     position: absolute;
     top: 45px;
-    left: 5px;
-    text-align: center;
-    overflow: auto;
+    right: 5px;
+    text-align: left;
+    width: 150px;
+    height: 100px;
+    overflow: scroll;
+    background-color: gray;
+    border-radius: 10px;
 }
 .member_list ul li{
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .member_list ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+.user_record {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    text-align: center;
 }
