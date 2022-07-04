@@ -4,7 +4,7 @@ body {
   
   .carousel-item {
     background-color: gray;
-    height: 800px;
+    height: 700px;
     width: 100%;
     background-size: cover;
     text-align: center;
@@ -132,4 +132,14 @@ body {
   .course .info .lecturer img,
   .course .info .lecturer .name {
     vertical-align: middle;
+  }
+
+  #footer {
+    text-align: center;
+  }
+
+  #footer img {
+    margin-top: 20px;
+    width: 100px;
+    margin-bottom: 20px;
   }

@@ -171,6 +171,8 @@
     margin-right: auto;
     width: 1100px;
     margin-bottom: 100px;
+    height: 650px;
+    overflow: scroll;
 
 }
 
@@ -203,3 +205,4 @@
     right: 100px;
     text-align: center;
 }
+
