@@ -246,3 +246,15 @@
     margin-top: 30px;
     text-align: center;
 }
+
+.user_final_record {
+    position: absolute;
+    top: 950px;
+    left: 50px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+    height: 40px;
+    overflow-y: auto;
+}
