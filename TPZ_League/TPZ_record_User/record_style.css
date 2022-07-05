@@ -223,9 +223,11 @@
 
 .user_record {
     position: absolute;
-    top: 25px;
-    right: 100px;
+    top: 170px;
+    left: 50px;
     text-align: center;
+    color: red;
+    font-weight: bold;
 }
 
 .final_league {
