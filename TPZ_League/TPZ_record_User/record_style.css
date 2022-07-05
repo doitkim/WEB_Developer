@@ -183,6 +183,7 @@
     text-align: center;
     line-height: 40px;
     font-weight: bold;
+    overflow: auto;
 }
 
 .body_map {
