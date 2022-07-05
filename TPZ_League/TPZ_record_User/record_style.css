@@ -144,6 +144,16 @@
     margin-right: auto;
 }
 
+#map_goodnight {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/goodnight.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .map_title {
     font-size: 20px;
     font-weight: bold;
