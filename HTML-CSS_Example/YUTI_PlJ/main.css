@@ -55,7 +55,6 @@ a {
 
 
 @media screen and (max-width: 767px){
-	/* 사업영역 */
 	.main{width: 100%; margin: 0px auto 0;}
 	.b_wrap{max-width: 100%; margin: 0 auto; height: auto; padding: 40px 0;}
 	.b_wrap .busi_content_wrap {padding: 60px 20px;}
