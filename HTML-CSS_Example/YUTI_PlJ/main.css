@@ -45,3 +45,36 @@ a {
 	--pink-color: #ee72d8;
 }
 
+@media screen and (max-width: 940px){
+	body {max-width: 767px; overflow-x: hidden;}
+	.b_wrap .business_list .flip{height: 300px;}
+	.b_wrap{padding: 100px 0;}
+	.b_wrap .business_list{flex-wrap: wrap;}
+	.b_wrap .business_list .flip{width: calc(100% / 2 - 4%); margin: 2%;}
+}	
+
+
+@media screen and (max-width: 767px){
+	/* 사업영역 */
+	.main{width: 100%; margin: 0px auto 0;}
+	.b_wrap{max-width: 100%; margin: 0 auto; height: auto; padding: 40px 0;}
+	.b_wrap .busi_content_wrap {padding: 60px 20px;}
+}
+
+
+@media screen and (max-width: 640px){
+    body {max-width: 640px; overflow-x: hidden;}
+   	.b_wrap .business_list .flip{height: 250px;}
+	.b_wrap .business_list li a .img_wrap{height: 125px;}
+	.b_wrap .business_list li a .img_wrap img{width: 80px;}
+	.b_wrap .busi_content_wrap .business_list .flip:first-child img{width: 135px;}
+	.b_wrap .business_list li a .title{font-size: 20px; }
+	.subTitleEng{font-size: 13px;}
+	.cus_wrap .ecoce-img-wrap{margin-top: 40px; }
+}
+
+@media screen and (max-width: 430px){
+	.b_wrap .business_list li a .title{font-size: 20px;}
+	.b_wrap .business_list .flip{width: 100%; height: 250px;}
+	.b_wrap .busi_content_wrap .flip:first-child li img{width: 130px !important;}
+}
