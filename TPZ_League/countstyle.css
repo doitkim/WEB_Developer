@@ -102,6 +102,10 @@ input {
     
 }
 
+.Priv_Legue_record {
+    height: 400px;
+    overflow-y: auto;
+}
 .Priv_Legue_record img{
    text-align: center;
    width: 780px;
