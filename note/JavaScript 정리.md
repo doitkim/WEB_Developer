@@ -1286,4 +1286,18 @@ for (let btn of btns) {
 
 ![image](https://user-images.githubusercontent.com/101789424/177677602-24e78127-91c8-40b7-bdfd-b557d50b724b.png)
 
+![image](https://user-images.githubusercontent.com/101789424/177683946-6f12f01d-8b58-43f5-9b3b-6ee7510f4bb0.png)
 
+![image](https://user-images.githubusercontent.com/101789424/177683967-b51b33ed-a98d-4e7c-97fa-53d5819b9491.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177683986-c26cd285-95e6-459e-8b91-ee0f9804cdc0.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177684018-922ba27b-5711-4769-b8bb-eed10b33efa7.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177684055-dd4e657d-264a-4e33-a91c-98b46b006d2e.png)
+
+https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
