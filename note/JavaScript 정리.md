@@ -1145,3 +1145,137 @@ for (let btn of btns) {
 
 ![image](https://user-images.githubusercontent.com/101789424/177676633-3896f555-88ae-4516-8d88-5bbec51f5c1c.png)
 
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
+
+<body>
+  <p>할 일 : <b data-field="title"></b></p>
+  <p>담당자 : <b data-field="manager"></b></p>
+  <p>상태 : <b data-field="status"></b></p>
+  <div>
+    상태 변경: 
+    <button class="btn" data-status="대기중">대기중</button>
+    <button class="btn" data-status="진행중">진행중</button>
+    <button class="btn" data-status="완료">완료</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+[data-status] {
+  padding: 5px 10px;
+}
+
+[data-status="대기중"] {
+  background-color: #FF6767;
+  color: #FFFFFF;
+}
+
+[data-status="진행중"] {
+  background-color: #5f62ff;
+  color: #FFFFFF;
+}
+
+[data-status="완료"] {
+  background-color: #07c456;
+  color: #FFFFFF;
+}
+
+const fields = document.querySelectorAll('[data-field]');
+const task = {
+  title: '코드 에디터 개발',
+  manager: 'CastleRing, Raccoon Lee',
+  status: '',
+};
+
+for (let tag of fields) {
+  const field = tag.dataset.field;
+  tag.textContent = task[field];
+}
+
+const btns = document.querySelectorAll('.btn');
+for (let btn of btns) {
+  const status = btn.dataset.status;
+  btn.onclick = function () {
+    fields[2].textContent = status;
+    fields[2].dataset.status = status;
+  };
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177677230-b8913cf1-ee94-4a9e-b902-2ce952b0c258.png)
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
+
+<body>
+  <p>할 일 : <b data-field="title"></b></p>
+  <p>담당자 : <b data-field="manager"></b></p>
+  <p>상태 : <b data-field="status"></b></p>
+  <div>
+    상태 변경: 
+    <button class="btn" data-status="대기중">대기중</button>
+    <button class="btn" data-status="진행중">진행중</button>
+    <button class="btn" data-status="완료">완료</button>
+  </div>
+  <script>
+    const fields = document.querySelectorAll('[data-field]');
+    const task = {
+      title: '코드 에디터 개발',
+      manager: 'CastleRing, Raccoon Lee',
+      status: '',
+    };
+
+    for (let tag of fields) {
+      const field = tag.dataset.field;
+      tag.textContent = task[field];
+    }
+
+    const btns = document.querySelectorAll('.btn');
+    for (let btn of btns) {
+      const status = btn.dataset.status;
+      btn.onclick = function () {
+        fields[2].textContent = status;
+        fields[2].dataset.status = status;
+      };
+    }
+  </script>
+</body>
+
+</html>
+
+[data-status] {
+  padding: 5px 10px;
+}
+
+[data-status="대기중"] {
+  background-color: #FF6767;
+  color: #FFFFFF;
+}
+
+[data-status="진행중"] {
+  background-color: #5f62ff;
+  color: #FFFFFF;
+}
+
+[data-status="완료"] {
+  background-color: #07c456;
+  color: #FFFFFF;
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177677315-693e7fdf-35ea-498d-89c0-897fb6930eeb.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677325-19dcf274-d5f0-454b-a97e-d0c6ac0be61b.png)
+
+
