@@ -1278,4 +1278,12 @@ for (let btn of btns) {
 
 ![image](https://user-images.githubusercontent.com/101789424/177677325-19dcf274-d5f0-454b-a97e-d0c6ac0be61b.png)
 
+![image](https://user-images.githubusercontent.com/101789424/177677479-d8050b24-b693-46ea-9009-a9511925f2b0.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677537-9fa423fd-4495-4d15-8248-66776e0d6d57.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677567-7de66e3c-6eb2-456d-ada6-fdfad9866cd9.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677602-24e78127-91c8-40b7-bdfd-b557d50b724b.png)
+
 
