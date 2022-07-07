@@ -1070,8 +1070,234 @@ Array.isArray(유사배열)의 리턴값은 false다.
 ![image](https://user-images.githubusercontent.com/101789424/176091126-23c97e18-f3aa-4a4a-afbb-0bb7ecb60601.png)
 
 
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
+
+<body>
+  <p>할 일 : <b field="title"></b></p>
+  <p>담당자 : <b field="manager"></b></p>
+  <p>상태 : <b field="status"></b></p>
+  <div>
+    상태 변경: 
+    <button class="btn" status="대기중">대기중</button>
+    <button class="btn" status="진행중">진행중</button>
+    <button class="btn" status="완료">완료</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+[status] {
+  padding: 5px 10px;
+}
+
+[status="대기중"] {
+  background-color: #FF6767;
+  color: #FFFFFF;
+}
+
+[status="진행중"] {
+  background-color: #5f62ff;
+  color: #FFFFFF;
+}
+
+[status="완료"] {
+  background-color: #07c456;
+  color: #FFFFFF;
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177676333-b9d94fce-38a9-4984-86ff-99b29107932e.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676373-b31c28fd-6748-4780-9403-319b64233318.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676403-6fd42048-255a-40e7-91fb-66f347d5ba4f.png)
+
+const fields = document.querySelectorAll('[field]');
+const task = {
+  title: '코드 에디터 개발',
+  manager: 'CastleRing, Raccoon Lee',
+  status: '',
+};
+
+for (let tag of fields) {
+  const field = tag.getAttribute('field');
+  tag.textContent = task[field];
+}
+
+const btns = document.querySelectorAll('.btn');
+for (let btn of btns) {
+  const status = btn.getAttribute('status');
+  btn.onclick = function () {
+    fields[2].textContent = status;
+    fields[2].setAttribute('status', status);
+  };
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177676427-f45fe054-9bd0-4dba-9efd-e540bd0d7726.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676550-c4009f3d-baad-4674-8991-ab742283af6f.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676633-3896f555-88ae-4516-8d88-5bbec51f5c1c.png)
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
+
+<body>
+  <p>할 일 : <b data-field="title"></b></p>
+  <p>담당자 : <b data-field="manager"></b></p>
+  <p>상태 : <b data-field="status"></b></p>
+  <div>
+    상태 변경: 
+    <button class="btn" data-status="대기중">대기중</button>
+    <button class="btn" data-status="진행중">진행중</button>
+    <button class="btn" data-status="완료">완료</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+[data-status] {
+  padding: 5px 10px;
+}
+
+[data-status="대기중"] {
+  background-color: #FF6767;
+  color: #FFFFFF;
+}
+
+[data-status="진행중"] {
+  background-color: #5f62ff;
+  color: #FFFFFF;
+}
+
+[data-status="완료"] {
+  background-color: #07c456;
+  color: #FFFFFF;
+}
+
+const fields = document.querySelectorAll('[data-field]');
+const task = {
+  title: '코드 에디터 개발',
+  manager: 'CastleRing, Raccoon Lee',
+  status: '',
+};
+
+for (let tag of fields) {
+  const field = tag.dataset.field;
+  tag.textContent = task[field];
+}
+
+const btns = document.querySelectorAll('.btn');
+for (let btn of btns) {
+  const status = btn.dataset.status;
+  btn.onclick = function () {
+    fields[2].textContent = status;
+    fields[2].dataset.status = status;
+  };
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177677230-b8913cf1-ee94-4a9e-b902-2ce952b0c258.png)
 
 
+<!DOCTYPE html>
+<html lang="ko">
 
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
 
+<body>
+  <p>할 일 : <b data-field="title"></b></p>
+  <p>담당자 : <b data-field="manager"></b></p>
+  <p>상태 : <b data-field="status"></b></p>
+  <div>
+    상태 변경: 
+    <button class="btn" data-status="대기중">대기중</button>
+    <button class="btn" data-status="진행중">진행중</button>
+    <button class="btn" data-status="완료">완료</button>
+  </div>
+  <script>
+    const fields = document.querySelectorAll('[data-field]');
+    const task = {
+      title: '코드 에디터 개발',
+      manager: 'CastleRing, Raccoon Lee',
+      status: '',
+    };
 
+    for (let tag of fields) {
+      const field = tag.dataset.field;
+      tag.textContent = task[field];
+    }
+
+    const btns = document.querySelectorAll('.btn');
+    for (let btn of btns) {
+      const status = btn.dataset.status;
+      btn.onclick = function () {
+        fields[2].textContent = status;
+        fields[2].dataset.status = status;
+      };
+    }
+  </script>
+</body>
+
+</html>
+
+[data-status] {
+  padding: 5px 10px;
+}
+
+[data-status="대기중"] {
+  background-color: #FF6767;
+  color: #FFFFFF;
+}
+
+[data-status="진행중"] {
+  background-color: #5f62ff;
+  color: #FFFFFF;
+}
+
+[data-status="완료"] {
+  background-color: #07c456;
+  color: #FFFFFF;
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177677315-693e7fdf-35ea-498d-89c0-897fb6930eeb.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677325-19dcf274-d5f0-454b-a97e-d0c6ac0be61b.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677479-d8050b24-b693-46ea-9009-a9511925f2b0.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677537-9fa423fd-4495-4d15-8248-66776e0d6d57.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677567-7de66e3c-6eb2-456d-ada6-fdfad9866cd9.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177677602-24e78127-91c8-40b7-bdfd-b557d50b724b.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177683946-6f12f01d-8b58-43f5-9b3b-6ee7510f4bb0.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177683967-b51b33ed-a98d-4e7c-97fa-53d5819b9491.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177683986-c26cd285-95e6-459e-8b91-ee0f9804cdc0.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177684018-922ba27b-5711-4769-b8bb-eed10b33efa7.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177684055-dd4e657d-264a-4e33-a91c-98b46b006d2e.png)
+
+https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent
