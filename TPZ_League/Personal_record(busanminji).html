@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="./TPZ_Home.css">
   <link rel="stylesheet" href="./TPZ_record_User/record_style.css">
+  <script src="./TPZ_record_User/CheckBox_record.js"></script>
 </head>
 
 <body>
@@ -181,6 +182,48 @@
   </div> -->
   <h3>전적 없음</h3>
 </div>
+<div id="PlayTypeBox">
+  <div id="PlayType_title"><h1>플레이 성향</h1></div>
+  <div class="PlayType_A">
+      <span>공격 :
+          <input type='radio' name='Play_Type_Attack_A' value=1 onclick='getPlayTypeCount_A(event)'/>1
+          <input type='radio' name='Play_Type_Attack_A' value=2 onclick='getPlayTypeCount_A(event)'/>2
+          <input type='radio' name='Play_Type_Attack_A' value=3 onclick='getPlayTypeCount_A(event)'/>3
+          <input type='radio' name='Play_Type_Attack_A' value=4 onclick='getPlayTypeCount_A(event)'/>4
+          <input type='radio' name='Play_Type_Attack_A' value=5 onclick='getPlayTypeCount_A(event)'/>5
+      </span>
+  </div>
+  <div class="PlayType_D">
+      <span>수비 :
+          <input type='radio' name='Play_Type_Attack_D' value=1 onclick='getPlayTypeCount_D(event)'/>1
+          <input type='radio' name='Play_Type_Attack_D' value=2 onclick='getPlayTypeCount_D(event)'/>2
+          <input type='radio' name='Play_Type_Attack_D' value=3 onclick='getPlayTypeCount_D(event)'/>3
+          <input type='radio' name='Play_Type_Attack_D' value=4 onclick='getPlayTypeCount_D(event)'/>4
+          <input type='radio' name='Play_Type_Attack_D' value=5 onclick='getPlayTypeCount_D(event)'/>5
+      </span>
+  </div>
+  <div class="PlayType_O">
+      <span>운영 :
+          <input type='radio' name='Play_Type_Attack_O' value=1 onclick='getPlayTypeCount_O(event)'/>1
+          <input type='radio' name='Play_Type_Attack_O' value=2 onclick='getPlayTypeCount_O(event)'/>2
+          <input type='radio' name='Play_Type_Attack_O' value=3 onclick='getPlayTypeCount_O(event)'/>3
+          <input type='radio' name='Play_Type_Attack_O' value=4 onclick='getPlayTypeCount_O(event)'/>4
+          <input type='radio' name='Play_Type_Attack_O' value=5 onclick='getPlayTypeCount_O(event)'/>5
+      </span>
+  </div>
+
+  
+  <br>
+  <span>공격 점수 : </span><span id="Attack_result"></span><br>
+  <span>수비 점수 : </span><span id="Defensive_result"></span><br>
+  <span>운영 점수 : </span><span id="Operate_result"></span><br>
+
+  <span><input id="BTN_AVG" type='button' value='평점' onclick='getPlayTypeCount_AVG(event)'/></span>
+  <div id="AVG"></div>
+
+  <span><input id="BTN_Download" type='button' value='기록 다운로드' onclick='getDownloadRecord(event)'/></span>
+</div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

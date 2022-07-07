@@ -1,0 +1,43 @@
+<script src="./CheckBox_record.js"></script>
+<link rel="stylesheet" href="./style.css">
+<div id="PlayTypeBox">
+    <div id="PlayType_title"><h1>플레이 성향</h1></div>
+    <div class="PlayType_A">
+        <span>공격 :
+            <input type='radio' name='Play_Type_Attack_A' value=1 onclick='getPlayTypeCount_A(event)'/>1
+            <input type='radio' name='Play_Type_Attack_A' value=2 onclick='getPlayTypeCount_A(event)'/>2
+            <input type='radio' name='Play_Type_Attack_A' value=3 onclick='getPlayTypeCount_A(event)'/>3
+            <input type='radio' name='Play_Type_Attack_A' value=4 onclick='getPlayTypeCount_A(event)'/>4
+            <input type='radio' name='Play_Type_Attack_A' value=5 onclick='getPlayTypeCount_A(event)'/>5
+        </span>
+    </div>
+    <div class="PlayType_D">
+        <span>수비 :
+            <input type='radio' name='Play_Type_Attack_D' value=1 onclick='getPlayTypeCount_D(event)'/>1
+            <input type='radio' name='Play_Type_Attack_D' value=2 onclick='getPlayTypeCount_D(event)'/>2
+            <input type='radio' name='Play_Type_Attack_D' value=3 onclick='getPlayTypeCount_D(event)'/>3
+            <input type='radio' name='Play_Type_Attack_D' value=4 onclick='getPlayTypeCount_D(event)'/>4
+            <input type='radio' name='Play_Type_Attack_D' value=5 onclick='getPlayTypeCount_D(event)'/>5
+        </span>
+    </div>
+    <div class="PlayType_O">
+        <span>운영 :
+            <input type='radio' name='Play_Type_Attack_O' value=1 onclick='getPlayTypeCount_O(event)'/>1
+            <input type='radio' name='Play_Type_Attack_O' value=2 onclick='getPlayTypeCount_O(event)'/>2
+            <input type='radio' name='Play_Type_Attack_O' value=3 onclick='getPlayTypeCount_O(event)'/>3
+            <input type='radio' name='Play_Type_Attack_O' value=4 onclick='getPlayTypeCount_O(event)'/>4
+            <input type='radio' name='Play_Type_Attack_O' value=5 onclick='getPlayTypeCount_O(event)'/>5
+        </span>
+    </div>
+
+    
+    <br>
+    <span>공격 점수 : </span><span id="Attack_result"></span><br>
+    <span>수비 점수 : </span><span id="Defensive_result"></span><br>
+    <span>운영 점수 : </span><span id="Operate_result"></span><br>
+
+    <span><input id="BTN_AVG" type='button' value='평점' onclick='getPlayTypeCount_AVG(event)'/></span>
+    <div id="AVG"></div>
+
+    <span><input id="BTN_Download" type='button' value='기록 다운로드' onclick='getDownloadRecord(event)'/></span>
+</div>
