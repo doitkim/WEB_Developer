@@ -51,6 +51,49 @@ body {
     background-position: center center;
   }
 
+  .carousel-item.item8 {
+    background-image: url('./map_image/butter.jpg');
+    background-position: center center;
+  }
+
+  .carousel-item.item9 {
+    background-image: url('./map_image/allegro.jpg');
+    background-position: center center;
+  }
+
+  .carousel-item.item10 {
+    background-image: url('./map_image/vermee.jpg');
+    background-position: center center;
+  }
+
+  .carousel-item.item11 {
+    background-image: url('./map_image/Neo_arkanoid.jpg');
+    background-position: center center;
+  }
+
+  .carousel-item.item12 {
+    background-image: url('./map_image/odyssey.jpg');
+    background-position: center center;
+  }
+
+  .carousel-item.item13 {
+    background-image: url('./map_image/nemesis.jpg');
+    background-position: center center;
+  }
+
+  .carousel-item.item14 {
+    background-image: url('./map_image/fallOut.png');
+    background-position: center center;
+  }
+
+  .carousel-item.item15 {
+    background-image: url('./map_image/frost.jpg');
+    background-position: center center;
+  }
+
+
+
+
   .map_rate {
     margin-top: 20px;
     font-size: 30px;
@@ -86,11 +129,11 @@ body {
   }
 
   .intro a {
-    background-color: #5900e7;
-    border-radius: 2px;
+    background-color: skyblue;
+    border-radius: 40px;
     padding: 10px, 30px;
-    color: white;
-    font-weight: 300;
+    color: black;
+    font-weight: bold;
     font-size: 22px;
   }
 
@@ -142,4 +185,15 @@ body {
     margin-top: 20px;
     width: 100px;
     margin-bottom: 20px;
+  }
+
+  .map_info {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  #footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
   }

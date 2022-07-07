@@ -154,6 +154,86 @@
     margin-right: auto;
 }
 
+#map_butter {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/butter.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_allegro {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/allegro.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_vermee {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/vermee.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_Neo_arkanoid {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/Neo_arkanoid.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_odyssey {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/odyssey.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_nemesis {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/nemesis.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_fallOut {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/fallOut.png");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_frost {
+    height: 300px;
+    width: 300px;
+    background-image: url("../map_image/frost.jpg");
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .map_title {
     font-size: 20px;
     font-weight: bold;
