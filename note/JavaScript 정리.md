@@ -1070,8 +1070,78 @@ Array.isArray(유사배열)의 리턴값은 false다.
 ![image](https://user-images.githubusercontent.com/101789424/176091126-23c97e18-f3aa-4a4a-afbb-0bb7ecb60601.png)
 
 
+<!DOCTYPE html>
+<html lang="ko">
 
+<head>
+  <meta charset="UTF-8">
+  <title>JS with Codeit</title>
+</head>
 
+<body>
+  <p>할 일 : <b field="title"></b></p>
+  <p>담당자 : <b field="manager"></b></p>
+  <p>상태 : <b field="status"></b></p>
+  <div>
+    상태 변경: 
+    <button class="btn" status="대기중">대기중</button>
+    <button class="btn" status="진행중">진행중</button>
+    <button class="btn" status="완료">완료</button>
+  </div>
+  <script src="index.js"></script>
+</body>
 
+</html>
 
+[status] {
+  padding: 5px 10px;
+}
+
+[status="대기중"] {
+  background-color: #FF6767;
+  color: #FFFFFF;
+}
+
+[status="진행중"] {
+  background-color: #5f62ff;
+  color: #FFFFFF;
+}
+
+[status="완료"] {
+  background-color: #07c456;
+  color: #FFFFFF;
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177676333-b9d94fce-38a9-4984-86ff-99b29107932e.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676373-b31c28fd-6748-4780-9403-319b64233318.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676403-6fd42048-255a-40e7-91fb-66f347d5ba4f.png)
+
+const fields = document.querySelectorAll('[field]');
+const task = {
+  title: '코드 에디터 개발',
+  manager: 'CastleRing, Raccoon Lee',
+  status: '',
+};
+
+for (let tag of fields) {
+  const field = tag.getAttribute('field');
+  tag.textContent = task[field];
+}
+
+const btns = document.querySelectorAll('.btn');
+for (let btn of btns) {
+  const status = btn.getAttribute('status');
+  btn.onclick = function () {
+    fields[2].textContent = status;
+    fields[2].setAttribute('status', status);
+  };
+}
+
+![image](https://user-images.githubusercontent.com/101789424/177676427-f45fe054-9bd0-4dba-9efd-e540bd0d7726.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676550-c4009f3d-baad-4674-8991-ab742283af6f.png)
+
+![image](https://user-images.githubusercontent.com/101789424/177676633-3896f555-88ae-4516-8d88-5bbec51f5c1c.png)
 
