@@ -162,5 +162,123 @@ function mapWinRate() {
     let league_rivolber_Z = Math.round(rivolber_Z / rivolber_total *100);
     document.getElementById("result_rivolber_Z").innerText = league_rivolber_Z;
 
+    const butter_T = Number(document.getElementById('butter_T').value);
+    const butter_P = Number(document.getElementById('butter_P').value);
+    const butter_Z = Number(document.getElementById('butter_Z').value);
+    butter_total = butter_T + butter_P + butter_Z;
+    document.getElementById("butter_total").innerText = butter_total;
 
+    let league_butter_T = Math.round(butter_T / butter_total *100);
+    document.getElementById("result_butter_T").innerText = league_butter_T;
+
+    let league_butter_P = Math.round(butter_P / butter_total *100);
+    document.getElementById("result_butter_P").innerText = league_butter_P;
+
+    let league_butter_Z = Math.round(butter_Z / butter_total *100);
+    document.getElementById("result_butter_Z").innerText = league_butter_Z;
+
+    const allegro_T = Number(document.getElementById('allegro_T').value);
+    const allegro_P = Number(document.getElementById('allegro_P').value);
+    const allegro_Z = Number(document.getElementById('allegro_Z').value);
+    allegro_total = allegro_T + allegro_P + allegro_Z;
+    document.getElementById("allegro_total").innerText = allegro_total;
+
+    let league_allegro_T = Math.round(allegro_T / allegro_total *100);
+    document.getElementById("result_allegro_T").innerText = league_allegro_T;
+
+    let league_allegro_P = Math.round(allegro_P / allegro_total *100);
+    document.getElementById("result_allegro_P").innerText = league_allegro_P;
+
+    let league_allegro_Z = Math.round(allegro_Z / allegro_total *100);
+    document.getElementById("result_allegro_Z").innerText = league_allegro_Z;
+
+    const vermee_T = Number(document.getElementById('vermee_T').value);
+    const vermee_P = Number(document.getElementById('vermee_P').value);
+    const vermee_Z = Number(document.getElementById('vermee_Z').value);
+    vermee_total = vermee_T + vermee_P + vermee_Z;
+    document.getElementById("vermee_total").innerText = vermee_total;
+
+    let league_vermee_T = Math.round(vermee_T / vermee_total *100);
+    document.getElementById("result_vermee_T").innerText = league_vermee_T;
+
+    let league_vermee_P = Math.round(vermee_P / vermee_total *100);
+    document.getElementById("result_vermee_P").innerText = league_vermee_P;
+
+    let league_vermee_Z = Math.round(vermee_Z / vermee_total *100);
+    document.getElementById("result_vermee_Z").innerText = league_vermee_Z;
+
+    const Neo_arkanoid_T = Number(document.getElementById('Neo_arkanoid_T').value);
+    const Neo_arkanoid_P = Number(document.getElementById('Neo_arkanoid_P').value);
+    const Neo_arkanoid_Z = Number(document.getElementById('Neo_arkanoid_Z').value);
+    Neo_arkanoid_total = Neo_arkanoid_T + Neo_arkanoid_P + Neo_arkanoid_Z;
+    document.getElementById("Neo_arkanoid_total").innerText = Neo_arkanoid_total;
+
+    let league_Neo_arkanoid_T = Math.round(Neo_arkanoid_T / Neo_arkanoid_total *100);
+    document.getElementById("result_Neo_arkanoid_T").innerText = league_Neo_arkanoid_T;
+
+    let league_Neo_arkanoid_P = Math.round(Neo_arkanoid_P / Neo_arkanoid_total *100);
+    document.getElementById("result_Neo_arkanoid_P").innerText = league_Neo_arkanoid_P;
+
+    let league_Neo_arkanoid_Z = Math.round(Neo_arkanoid_Z / Neo_arkanoid_total *100);
+    document.getElementById("result_Neo_arkanoid_Z").innerText = league_Neo_arkanoid_Z;
+    
+    const odyssey_T = Number(document.getElementById('odyssey_T').value);
+    const odyssey_P = Number(document.getElementById('odyssey_P').value);
+    const odyssey_Z = Number(document.getElementById('odyssey_Z').value);
+    odyssey_total = odyssey_T + odyssey_P + odyssey_Z;
+    document.getElementById("odyssey_total").innerText = odyssey_total;
+
+    let league_odyssey_T = Math.round(odyssey_T / odyssey_total *100);
+    document.getElementById("result_odyssey_T").innerText = league_odyssey_T;
+
+    let league_odyssey_P = Math.round(odyssey_P / odyssey_total *100);
+    document.getElementById("result_odyssey_P").innerText = league_odyssey_P;
+
+    let league_odyssey_Z = Math.round(odyssey_Z / odyssey_total *100);
+    document.getElementById("result_odyssey_Z").innerText = league_odyssey_Z;
+
+    const nemesis_T = Number(document.getElementById('nemesis_T').value);
+    const nemesis_P = Number(document.getElementById('nemesis_P').value);
+    const nemesis_Z = Number(document.getElementById('nemesis_Z').value);
+    nemesis_total = nemesis_T + nemesis_P + nemesis_Z;
+    document.getElementById("nemesis_total").innerText = nemesis_total;
+
+    let league_nemesis_T = Math.round(nemesis_T / nemesis_total *100);
+    document.getElementById("result_nemesis_T").innerText = league_nemesis_T;
+
+    let league_nemesis_P = Math.round(nemesis_P / nemesis_total *100);
+    document.getElementById("result_nemesis_P").innerText = league_nemesis_P;
+
+    let league_nemesis_Z = Math.round(nemesis_Z / nemesis_total *100);
+    document.getElementById("result_nemesis_Z").innerText = league_nemesis_Z;
+
+    const fallOut_T = Number(document.getElementById('fallOut_T').value);
+    const fallOut_P = Number(document.getElementById('fallOut_P').value);
+    const fallOut_Z = Number(document.getElementById('fallOut_Z').value);
+    fallOut_total = fallOut_T + fallOut_P + fallOut_Z;
+    document.getElementById("fallOut_total").innerText = fallOut_total;
+
+    let league_fallOut_T = Math.round(fallOut_T / fallOut_total *100);
+    document.getElementById("result_fallOut_T").innerText = league_fallOut_T;
+
+    let league_fallOut_P = Math.round(fallOut_P / fallOut_total *100);
+    document.getElementById("result_fallOut_P").innerText = league_fallOut_P;
+
+    let league_fallOut_Z = Math.round(fallOut_Z / fallOut_total *100);
+    document.getElementById("result_fallOut_Z").innerText = league_fallOut_Z;
+
+    const frost_T = Number(document.getElementById('frost_T').value);
+    const frost_P = Number(document.getElementById('frost_P').value);
+    const frost_Z = Number(document.getElementById('frost_Z').value);
+    frost_total = frost_T + frost_P + frost_Z;
+    document.getElementById("frost_total").innerText = frost_total;
+
+    let league_frost_T = Math.round(frost_T / frost_total *100);
+    document.getElementById("result_frost_T").innerText = league_frost_T;
+
+    let league_frost_P = Math.round(frost_P / frost_total *100);
+    document.getElementById("result_frost_P").innerText = league_frost_P;
+
+    let league_frost_Z = Math.round(frost_Z / frost_total *100);
+    document.getElementById("result_frost_Z").innerText = league_frost_Z;
 }
