@@ -217,6 +217,7 @@ body {
     font-weight: bold;
     height: 80px;
     overflow-y: auto;
+    line-height: 80px;
     
   }
 
@@ -225,7 +226,10 @@ body {
     color: black;
     font-weight: bold;
     list-style: none;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: normal;
   }
   .league_list {
     margin-top: 0px;
@@ -237,4 +241,35 @@ body {
 
   #list {
     margin: 0px;
+  }
+
+  #notice {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 20px;
+    position: absolute;
+    top: 480px;
+    left: 20px;
+    background-color: bisque;
+    margin: 0px;
+    height: 350px;
+  }
+
+  #notice ul li {
+  list-style: none;
+  color: red;
+  padding: 0px;
+  font-size: 15px;
+  
+  }
+
+  #notice ul{
+    padding: 0px;
+    text-align: center;
+  }
+
+  #notice h5 {
+    font-size: 18px;
+    text-align: center;
   }
