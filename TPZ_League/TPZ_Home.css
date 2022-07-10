@@ -285,6 +285,11 @@ body {
     margin-right: 0px;
   }
 
+  .League_view a {
+    text-decoration: none;
+    color: black;
+  }
+
   h2 {
     text-align: center;
   }
