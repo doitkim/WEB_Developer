@@ -329,13 +329,13 @@
 
 .user_final_record {
     position: absolute;
-    top: 1400px;
-    left: 50px;
+    top: 1350px;
+    left: 30px;
     text-align: center;
     color: red;
     font-weight: bold;
     font-size: 13px;
-    height: 20px;
+    height: 40px;
     overflow-y: auto;
 }
 
