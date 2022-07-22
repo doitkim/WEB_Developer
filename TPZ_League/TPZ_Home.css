@@ -2,6 +2,9 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
   }
   
+ul {
+  padding: 0px;
+}
   .carousel-item {
     background-color: gray;
     height: 400px;
@@ -249,7 +252,7 @@ body {
     border-radius: 40px;
     font-size: 20px;
     position: absolute;
-    top: 480px;
+    top: 645px;
     left: 20px;
     background-color: bisque;
     margin: 0px;
@@ -303,3 +306,12 @@ body {
 .League_view ul {
   padding: 0%;
 }
+
+#tonul_img {
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top:670px;
+  right: 30px;
+}
+
