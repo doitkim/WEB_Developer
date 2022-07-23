@@ -307,11 +307,17 @@ ul {
   padding: 0%;
 }
 
-#tonul_img {
-  width: 25%;
-  height: 20%;
+.tonul_img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+#tonul_img_list {
   position: absolute;
   top:670px;
   right: 30px;
+  width: 25%;
+  height: 20%;
+  overflow-y: scroll;
 }
-
