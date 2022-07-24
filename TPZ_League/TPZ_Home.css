@@ -218,14 +218,14 @@ ul {
     text-align: center;
     color: red;
     font-weight: bold;
-    height: 80px;
+    height: 250px;
     overflow-y: auto;
-    line-height: 80px;
+    line-height: 200px;
     
   }
 
   .League_schedule ul li {
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     font-weight: bold;
     list-style: none;
@@ -234,6 +234,11 @@ ul {
     margin-right: auto;
     line-height: normal;
   }
+
+.tono_table {
+  width: 400px;
+}  
+
   .league_list {
     margin-top: 0px;
     display: block;
